@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html charset="utf8">
+<head>
+<title>Article2|Linc</title>
+<link href="font.css" type="text/css" rel="stylesheet"/>
+<style type="text/css">
+	div#Header 
+	{
+		background: rgb(56,56,56);
+		position: fixed;
+		z-index: 4;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 240px;
+		font-family: "Calibri";
+	}
+	img#Homeicon
+	{
+		margin-top: 30px;
+		margin-left: 55px;
+		width: 110px;
+		height: 110px;
+	}
+	nav.Navigation
+	{
+		position: absolute;
+		top: 35%;
+	}
+	img.Menu_icon
+	{
+		float: left;
+		width: 42px;
+		height: 42px;
+		margin-top: 25px;
+		margin-left: 25px;
+		display: block;
+	}
+	span.Menu_item
+	{
+		font-size: 30px;
+		color: white;
+		display: block;
+		padding:18px 0 0 80px;
+	}
+	span.Menu_subitem
+	{
+		font-size: 15px;
+		color:rgb(120, 120, 120);
+		display: block;
+		margin-left:80px;
+	}
+	footer#Footer
+	{
+		position: absolute;
+		bottom: 1%;
+		left: 20%;
+	}
+	section#About
+	{
+		text-align: center;
+		color: white;
+		font-family: "Eras Light ITC";
+		font-size: 15px;
+	}
+	div.Pages
+	{
+		z-index: 1;
+	}
+	section#HomePage
+	{
+		background: url(sites/images/article_wallpaper.jpg) repeat;
+		background-position: center bottom !important; 
+		background-size: cover; 
+		position: absolute;
+		top: 0;
+		left: 240px;
+		right: 0;
+		bottom: 110;
+		color: white;
+	}
+	div#Content_Header
+	{
+		margin-top: 100px;
+		margin-left: 100px;
+		font-family: "Century Gothic";
+	}
+	div#Headline
+	{
+		font-family:"微软雅黑";
+		color: #595959;
+		font-size: 70px;
+	}
+	div#Date
+	{
+		font-family:"微软雅黑";
+		margin-left: 5px;
+		color: #595959;
+		font-size: 25px;
+	}
+	div#Line
+	{
+		margin-left:5px;
+		margin-top:-10px;
+	}
+	div#ContentFrame
+	{
+		margin-left: 100px;
+		margin-top: 10px;
+		background:#352b2c;
+		width:50%;
+		opacity: 0.7;
+	}
+	div#Content
+	{
+		font-family:"微软雅黑";
+		margin-left: 50px;
+	}
+	div#Line2
+	{
+		margin-left:100px;
+		margin-top:3px;
+	}
+	footer#ContentFooter
+	{
+		height:200px;
+	}
+	div#Article1
+	{
+		height: 250px;
+		width: 600px;
+		word-wrap: break-word; 
+		word-break: normal; 
+		float:left; 
+		display:inline;
+	}
+	img.Article_icon
+	{
+		float: left;
+		width: 100px;
+		height: 100px;
+		margin-top: 25px;
+		margin-left: 25px;
+		display: block;
+	}
+	span.Article_head
+	{
+		font-size: 40px;
+		color: #828282;
+		display: block;
+		padding:30px 0 0 100px;
+
+	}
+	span.Article_abstract
+	{
+		font-size: 20px;
+		color:#828282;
+		display: block;
+		padding:20px 0 0 100px;
+	}
+	img#Introduce
+	{
+		position:fixed;
+		bottom:0%;
+		right:0;
+	}
+	div#RecentInfo
+	{
+		font-family:"微软雅黑";
+		position:fixed;
+		background:#352b2c;
+		right:0;
+		width:200px;
+		height:300px;
+		top:30%;
+		opacity: 0.5;
+	}
+	div#RecentHead
+	{
+		margin-left:20px;
+		color:white;
+	}
+	div#RecentContent
+	{
+		position:center;
+		color:white;
+	}
+	a.ContentLink
+	{
+		color:white;
+	}
+	img.ArticleImg
+	{
+		height: 200px;
+	}
+</style>
+</head>
+<body>
+	<div id = "Header" class = "Header">
+		<div id = "HomePage">
+			<a href="index.html">
+				<img id = "Homeicon" src="sites\icons\HomeIcon.png">
+			</a>
+		</div>
+			<nav id = "Navigation" class = "Navigation">
+				<div id = "Menu">
+					<li style="list-style-type:none;">
+						<a href="mission.html" style="text-decoration:none">
+						<img class = "Menu_icon" src="sites\icons\Mission.png">
+						<span class = "Menu_item">Mission</span>
+						<span class = "Menu_subitem">Know I'm up to do</span>
+						</a>
+					</li>
+					<li style="list-style-type:none;">
+						<a href="blog.html" style="text-decoration:none">
+						<img class = "Menu_icon" src="sites\icons\Blog.png">
+						<span class = "Menu_item">Blog</span>
+						<span class = "Menu_subitem">See what I am doing</span>
+						</a>
+					</li>
+					<li style="list-style-type:none;">
+						<a href="result.html" style="text-decoration:none">
+						<img class = "Menu_icon" src="sites\icons\Result.png">
+						<span class = "Menu_item">Result</span>
+						<span class = "Menu_subitem">Get what I have done</span>
+						</a>
+					</li>
+				</div>
+			</nav>
+		<footer id = "Footer">
+			<section id = "About">Made in THU 2014</section>
+		</footer>
+	</div>
+
+	<div class = "Pages">
+		<section id = "HomePage">
+			<div id = "RecentInfo">
+				<div id = "RecentHead">
+				<h1>最近的日志</h1>
+				</div>
+				<div id = "RecentContent">
+					<ul>
+
+						<a href="article_01.html" style="text-decoration:none" class= "ContentLink"><li>WEB前端日志</li></a>
+						<a href="article_02.html" style="text-decoration:none" class= "ContentLink"><li>Javascript基础练习</li></a>
+						<li>赏月Recital</li>
+						<li>空想Forest</li>
+						<li>Outer Science</li>
+						<li>Summer Time Record</li>
+					</ul>
+				</div>
+			</div>
+			<div id = "Content_Header">
+				<div id = "Headline">Javascript基础练习</div>
+				<div id = "Date">2014.7.4 清华园</div>
+				<div id = "Line"><img  src = "sites\images\frameline.png"></div>
+			</div>
+			<div id = "ContentFrame">
+				<div id = "Content">
+				<body><br>
+				<h1>基础练习</h1>
+				<h3>基础练习1</h3>
+				<img class = "ArticleImg" src="sites\images\article_02\1.png">
+				<li>问：如上的自执行函数的返回值是什么？请解释为什么会是这样的返回值？</li>
+				<li>答：返回值是”undefined”。<br>
+				          实际上在第二段代码的函数中arguments[0]就是function (){return this.num;},因此arguments[0]()执行了这个隐式函数以后返回的是this.num;此时this的作用域是arguments,而num只在func内部有定义，在arguments没有定义，因此typeof this.num返回值是”undefined”。</li>
+
+				<h3>基础练习2</h3>
+				<img class = "ArticleImg" src="sites\images\article_02\2.png">
+				<li>问：如上console.log出的是什么？为什么会这样？</li>
+				<li>答：结果是”undefined”。<br>
+					因为x是全局变量，并不是foo()函数的成员变量，因此虽然bar构造了实例对象但是并没有成员变量x。因此是undefined。</li>
+
+				<h3>基础练习3</h3>
+ 				<img class = "ArticleImg" src="sites\images\article_02\3.png">
+				<li>问：alert的结果是什么？为什么会这样？</li>
+				<li>答：结果是”function”。<br>
+					因为这段代码执行前进行了预编译，先声明所有var变量（初始为undefined），然后解析定义式函数语句。因此在执行过程中bar()返回的foo是有效的function。即结果为”function”</li>
+
+				<h3>基础练习4</h3>
+				<img class = "ArticleImg" src="sites\images\article_02\4.png">
+				<li>问：左边代码分别alert出的结果是什么？为什么会这样？
+				<li>答：分别是3和1。
+					因为go =foo.baz.bar是一个匿名函数，go()相当于function(){return this.x;}此时的this的作用域是window，因此为3.而foo.baz.bar()返回的this.x，this的作用域是baz的内部，因此是1。
+
+				<h3>基础练习5</h3>
+				<img class = "ArticleImg" src="sites\images\article_02\5.png">
+				<li>问：alert出的结果是什么？为什么会这样？</li>
+				<li>答：结果是”undefined”。<br>
+					因为return后空白，编译时会自动加分号，则实际上变成”return;”没有返回值。因此typeof aaa() 为”undefined”。</li>
+					<br><br>
+
+				<h1>进阶练习</h1>
+				<h3>进阶练习1</h3>
+				<h4>设计思路：</h4>
+					<li>一共进行4轮比赛，每一轮分组进行比赛，如第一轮是两队一组进行比赛，第二轮就是四队角逐，以此类推。而每一轮比赛每支队伍只需跟上一轮没比过的队伍比赛即可。</li>
+					<li>每一轮比赛后队伍的胜率 = (本队的能力 / (本队的能力+第i队的能力) )* 第i队上一轮的胜率 ；(i为这一轮比赛本队需要比的队伍)。</li>
+					<li>循环4次即可得到最后一轮每个队伍的胜率。（即最终每支队获得冠军的概率）。</li>
+
+				<h1>进阶练习2</h1>
+				<h3>设计思路：</h3>
+					<li>首先使用typeof判断第二个参数是什么类型，数字，字符串，对象分别进入不同的情况。</li>
+					<li>如果是数字，就遍历数组里的每个对象的age属性，将age属性输入参数相等的对象push进新数组中。最后判断数组长度，大于0范围数组，否则返回false。</li>
+					<li>如果是字符串，遍历数组中每个对象的name属性，找到第一个相同的即可返回该对象。若遍历完均不等，则返回false。</li>
+					<li>如果是对象（记为obj），则每次遍历数组中的对象时，对每个对象遍历obj中含有的所有属性，如果均相等则将当前对象push进数组中，否则转到下一个对象。遍历完若数组长度大于1则返回该数组，否则返回false。</li>
+					<br><br>
+				<h1>BONUS</h1>
+				<h3>DIFF函数</h3>
+					对第二个数组中的每个对象，用第一个数组中的每个对象进行比较，若name相同，则说明该对象存在于第一个数组中，遍历下一个对象，若第一个数组中的每个对象name都与该对象不同，则说明这个对象存在于第二个数组却不存在于第一个数组，因此将其push 到新建的数组中。
+					最后返回该数组。
+				<h3>基本排序算法</h3>
+					思路跟C++的一致。
+					<br><br>
+
+				<h1>UNTRUSTED</h1> 
+				<li>第一关：<a href = "https://gist.github.com/anonymous/1c8235bd19064f36b8b8" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				可修改的代码功能是画出围墙，所以把代码全删了就行。</li><br>
+				<li>第二关：<a href = "https://gist.github.com/4074d0bf2042cbe7c0ee" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				出口被封住了。在其他空地方用playObject再画一个出口。</li><br>
+				<li>第三关：<a href = "https://gist.github.com/8543cd58a41b0c16fd33" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				修改代码使得墙出现缺口。跟第一关差不多。</li><br>
+				<li>第四关：<a href = "https://gist.github.com/98f2d8c97fedfd2bdf7b" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				在墙内画一个出口。跟第二关差不多。</li><br>
+				<li>第五关：<a href = "https://gist.github.com/26365d6cd20426a7758a" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				增加一行代码给看不见的’mine’上上其他的颜色。</li><br>
+				<li>第六关：<a href = "https://gist.github.com/2d4d0eeedf046235c0f8" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				有个敌人追你。可以画一道墙挡住他。</li><br>
+				<li>第七关: <a href = "https://gist.github.com/71d44933764863c81371" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				通过电话可以改变颜色。设置在对应的位置变成相应的颜色通过。</li><br>
+				<li>第八关：<a href = "https://gist.github.com/48fecab8ad4a1d485065" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				将phone里的代码改成generateForest，每次使用phone随机生成森林，一点点挪到出口。</li><br>
+				<li>第九关：<a href = "https://gist.github.com/c92d1ea0b9d35b7cee57" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				多定义几条船横在河中间通过。</li><br>
+				<li>第十关：<a href = "https://gist.github.com/29571626a053952b786b" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				根据坐标使得位于中间的两个方块向左移动空出一条道路。</li><br>
+				<li>第十一关：<a href = "https://gist.github.com/d2d964cd63e061fd9588" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				控制机器人先向右，碰壁后向下拿钥匙交给你即可。</li><br>
+				<li>第十二关：<a href = "https://gist.github.com/82eb17ed73e2ae52cac5" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				控制机器人位置在左半边是先向下再向右，到中间时候向上再向右，到达右边边缘时候向下。</li><br>
+				<li>第十三关：<a href = "https://gist.github.com/82eb17ed73e2ae52cac5" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				让机器人如果不能向下就向右，然后随机地图看人品0V0。</li><br>
+				<li>第十四关：<a href = "https://gist.github.com/f9b10cf41793b01626f1" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				选择remove blueKey</li><br>
+				<li>第十五关：<a href = "https://gist.github.com/10d1ad04a48205e87c6e" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				随便将死法改成其他未定义的名字。比如exit（去掉上下引号）。通过河的时候就不会死了。。</li><br>
+				<li>第十六关：<a href = "https://gist.github.com/957c04eaa3e976ed3f26" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				随机按地图出了条安全的路通过了。</li><br>
+				<li>第十七关：<a href = "https://gist.github.com/4bec4f6502ded9e034b0" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				同十六关走了几下就传送到出口了。</li><br>
+				<li>第十八关：<a href = "https://gist.github.com/517e64e2069bcbb588c4" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				利用jump()新建一座别的砖块的桥即可</li><br>
+				<li>第十九关： <a href = "https://gist.github.com/2adddbb1fd4b3391c7d1" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				随便乱按就过去了。但是看起来好像是要先控制方向键让绿色覆盖整个页面然后红色。</li><br>
+				<li>第二十关：<a href = "https://gist.github.com/281ee2b0fcffb082f6f9" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				修改代码设置向左可以发射子弹击毁BOSS拿到A。攻略大法好。</li><br>
+				<li>第二十一关：<a href = "https://gist.github.com/296450b59a4e8a0f44c9" style="text-decoration:none" class= "ContentLink">相关代码</a><br>
+				在menu里把object.js里的if(!map.finalLevel){}删掉</li><br>
+				<li>第二十一关：通关~。</li><br>
+
+				<br></body>
+				</div>
+			</div>
+			<div id = "Line2"><img  src = "sites\images\frameline.png"></div>
+			<footer id = "ContentFooter"></footer>
+			<a href="introduction.html">
+					<img id = "Introduce" src="sites\icons\Introduce.png">
+			</a>
+		</section>
+	</div>
+</body>
+</html>
