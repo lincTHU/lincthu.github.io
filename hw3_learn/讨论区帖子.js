@@ -1,7 +1,5 @@
-﻿//j=document.createElement("script");j.src="https://raw.githubusercontent.com/lincTHU/lincthu.github.io/master/hw3_learn/%E8%AE%A8%E8%AE%BA%E5%8C%BA%E5%B8%96%E5%AD%90.js";document.body.appendChild(j)
-head = document.getElementsByClassName("toolbar")[0];
-b = document.createElement("button");
-b.innerHTML = '<img><span>So What( </span><span>0</span><span> )</span>';
+﻿b = document.createElement("button");
+b.innerHTML = '<img><span>So What ( </span><span>0</span><span> )</span>';
 b.className = "red-button"; 
 b.setAttribute("onclick", "clickOnSoWhat()");
 b.setAttribute("type", "button");
