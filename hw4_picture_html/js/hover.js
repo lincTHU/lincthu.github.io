@@ -1,8 +1,10 @@
-﻿$('#Hover').click(function(){
+﻿//实现单击右下角灰条时隐藏/开启评论区和灰条的功能
+$('#Hover').click(function(){
 	$('#Hover').fadeToggle(1500);
 	$('#Comment').slideUp(1500);
 })
 
+//添加卖萌区的两个事件，单击图片分别增加钱和RP，同时钱打到一定数量设置了搞怪的出发事件
 $("#clickEat").click(function(){
 	$('#money').html(parseInt($('#money').html()) + 1 + '元');
 	if (parseInt($('#money').html()) == 50)

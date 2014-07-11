@@ -70,17 +70,17 @@ $.getJSON('js/comment_content.js', function(a){
 //绑定点击页数时跳转页面
 $('#page_list_box').on('click', 'a:not(.page_strong)', function(){
 	n = $(this).html();
-	if (n == '首页')
+	if (n == '首页')//如果点击首页时页数已经是第一页则跳出提示
 	{
 		n = 1;
 		if ($('#page_list_box .page_strong').html() == n) {alert('已经到首页了啦(;¬_¬) ');return;}
 	}
-	if(n == '末页')
+	if(n == '末页')//如果点击末页时页数已经是最后一页则跳出提示
 	{
 		n = Math.ceil(comment.length/e);
 		if ($('#page_list_box .page_strong').html() == n) {alert('已经到尾页了啦(;¬_¬) ');return;}
 	}
-	if(n == '下页')
+	if(n == '下页')//如果点击下一页时页数已经是最后一页则跳出提示
 	{
 		n = parseInt($('#page_list_box .page_strong').html()) + 1;
 		if (n > Math.ceil(comment.length/e)) {alert('已经到尾页了啦(;¬_¬) ');return;}
@@ -102,27 +102,27 @@ $('#page_list_box').on('click', 'a:not(.page_strong)', function(){
 		parent.append($('<li class = "comment_item"/>').append(div1, div2, div3, div4));
 	};
 
-	t = $('#page_list_box .page_strong').attr('class', 'page');
+	t = $('#page_list_box .page_strong').attr('class', 'page');//清除当前页的强调效果
 
-	if($(this).html() === '首页')
+	if($(this).html() === '首页')//如果是首页则对第一页设置强调效果
 	{
 		$('#page_list_box :contains(1)').attr('class', 'page_strong');
 	}
-	else if($(this).html() === '末页')
+	else if($(this).html() === '末页')//如果是首页则对最后一页设置强调效果
 	{
 		$('#page_list_box a:not(.nextPage, .endPage)').last().attr('class', 'page_strong');
 	}
-	else if($(this).html() === '下页')
+	else if($(this).html() === '下页')//如果是下页则对当前设置了强调效果的下一页设置强调效果
 	{
 		t.next().attr('class', 'page_strong');
 	}
-	else $(this).attr('class', 'page_strong');
-	storage.setItem("pageNum", $("#page_list_box .page_strong").html());
+	else $(this).attr('class', 'page_strong');//其他情况则对选中的页码设置强调效果
+	storage.setItem("pageNum", $("#page_list_box .page_strong").html());//同时本地存储此时浏览的页数
 	
 	
 })
 
-
+//蠢萌的函数们
 $('#reply_sort, #agree_sort').click(function(){
 	alert("蠢萌的作者还在施工中..");
 })

@@ -31,7 +31,7 @@ $.getJSON('js/view_content.js', function(a){
 		$('.focus_view_picture').width(w);
 });
 
-
+//读取存在本地的历史信息并读入右下角历史状态栏中
 var storage = window.localStorage;
 if(storage.picName != null)
 {
@@ -41,6 +41,7 @@ if(storage.picName != null)
 }
 
 
+//设置触发事件，当鼠标不动超过2S后标题栏自动淡出，使得整张图片更加完整。
 var stop_time = 0;
 $(document).mousemove(function(){
 	clearInterval(stop_time);
@@ -48,10 +49,12 @@ $(document).mousemove(function(){
 	stop_time = setInterval("$('#focus_text').fadeOut(2000)", 2000);
 })
 
+//设置触发事件，5S为周期自动向右切换图片
 setInterval("f()", 5000);
 
+//向右切换图片的函数
 function f(){
-	if($('#pic_show').next().length != 0)
+	if($('#pic_show').next().length != 0)//当右边还有图片时，读取下一张为要显示的图片，原图设为淡出效果，下一张淡入效果
 	{
 		var temp = $('#pic_show').next();
 		$('#pic_show').fadeOut(1500);
@@ -66,7 +69,7 @@ function f(){
 		temp.attr('class', 'text_show');
 
 	}
-	else
+	else//当右边没有图片时，读取左边第一张图片为下一张要显示的图片
 	{
 		var temp = $($('#pic_show').parent()[0].firstElementChild);
 		$('#pic_show').fadeOut(1500);
@@ -80,11 +83,11 @@ function f(){
 		$('.text_show').attr('class', 'text_hidden');
 		temp.attr('class', 'text_show');
 	}
-	storage.setItem("picName", $(".text_show .focus_text_title").html());
+	storage.setItem("picName", $(".text_show .focus_text_title").html());//切换图片完成后将本次浏览的图片数据存储在本地中
 }
 
 
-
+//向左切换同理
 $('#focus_left').click(function(){
 	if($('#pic_show').prev().length != 0)
 	{
@@ -119,7 +122,7 @@ $('#focus_left').click(function(){
 
 $('#focus_right').click(f);
 
-
+//这里分别设置了左边和右边两个区域，当鼠标进入左/右区域时，相应的箭头按钮才会显示出来，而当鼠标离开时，则会触发淡出效果。也保证了图片显示的完整性。
 $("#focus_left_area").mouseenter(function(){
 	$('#focus_left').fadeIn(500);
 })
@@ -136,6 +139,8 @@ $('#focus_right_area').mouseleave(function(){
 	$('#focus_right').fadeOut(500);
 });
 
+
+//设置了当点击标题栏的相关信息时，可以打开评论区
 $("#focus_text").click(function(){
 	$("#Comment").slideToggle(1500);
 	$('#Hover').fadeToggle(1500);
