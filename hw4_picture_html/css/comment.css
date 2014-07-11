@@ -1,0 +1,184 @@
+﻿#Comment ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	display: block;
+}
+
+#Comment li{
+	position: relative;
+}
+
+#Comment{
+	position: relative;
+	overflow: hidden;
+	margin: 3% auto;
+}
+
+#comment_title{
+	height: 24px;
+	overflow: hidden;
+	line-height: 24px;
+	display: block;
+	border-bottom: 2px solid #e7e7e7;
+
+	color: #555;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	font-weight: bold;
+}
+#comment_area{
+	width: 1000px;
+	overflow: hidden;
+	margin-top:0;
+	margin-left: 8%;
+	position: relative;
+	background: #ffffff;
+	float: left;
+}
+
+#comment_list{
+	width: 99.5%;
+	min-height: 100px;
+	height: auto !important;
+	float: left;
+	margin:10px auto;
+	position: relative;
+	border: 1px solid #efefef;
+	border-bottom-width: 2px;
+	border-radius: 4px;
+}
+
+#comment_order{
+	display: block;
+	border-bottom: 1px solid #ddd;
+	height: 30px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+
+#comment_order li{
+	padding:2px 5px 2px 5px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 2px;
+
+	font-size: 13px;
+}
+
+.comment_order_on{
+	background: #00a6d8;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.comment_item{
+	overflow: hidden;
+	border-bottom: 1px solid #efefef;
+	padding:5px 0 5px 0;
+}
+
+.comment_facebox{
+	float: left;
+	height: 70px;
+	width: 60px;
+	position: relative;
+	margin-right: 5px;
+	display: block;
+}
+
+.comment_face{
+	width: 48px;
+	height: 48px;
+	padding: 4px;
+	border: none;
+}
+
+.comment_item_title{
+	color: #aaa;
+	margin-top: 3px;
+	line-height: 18px;
+	display: block;
+	font-size: 12px;
+}
+
+.comment_username{
+	margin-left: 5px;
+	outline: none;
+	color: #00A1D6;
+	cursor: pointer;
+}
+
+.comment_content{
+	list-style: list-item;
+	line-height: 20px;
+	padding: 5px 0 5px 0;
+	font-size: 13px;
+	overflow: hidden;
+	display: block;
+}
+
+.comment_item_footer{
+	font-size: 11px;
+	color: #999;
+	line-height: 26px;
+	margin-left: 65px;
+	display: block;
+}
+
+.comment_report{
+	float: right;
+	color: #999;
+	line-height: 18px;
+	margin-right: 10px;
+}
+
+#page_list_box{
+	margin: 0 10px 3px 0;
+	float: right;
+	font-size: 13px;
+	line-height: 24px;
+	text-align: center;
+	font-family: Arial;
+}
+
+#page_list_box span, #page_list_box a, #page_list_box strong{
+	min-width: 10px;
+	margin: 0 3px 0 4px;
+	padding:2px 5px 2px 5px;
+	text-align: center;
+}
+
+.indexPage, .nextPage, .endPage{
+	background: #00a6d8;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.comment_mouse_on{
+	background: #999;
+	color:#efefef;
+	border-radius: 5px;
+}
+
+.page{
+	cursor: pointer;
+}
+
+.page_strong{
+	background: #00a6d8;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.zan{
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.moe{
+	cursor: pointer;
+}
