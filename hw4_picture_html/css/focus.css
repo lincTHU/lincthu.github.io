@@ -52,7 +52,6 @@ body{
 	top:40%;
 	z-index: 10; 
 	display: inline;
-	background: url("pic/focus_left.png"), no-repeat;
 	display:none; 
 }
 
@@ -66,7 +65,6 @@ body{
 	top:40%;
 	z-index: 10; 
 	display: inline;
-	background: url("pic/focus_right.png"), no-repeat;
 	display:none; 
 }
 
