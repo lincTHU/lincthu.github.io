@@ -1,0 +1,7 @@
+#myCanvas{
+	position: absolute;
+	z-index: 4;
+	margin: 0;
+	width: 1600px;
+	height: 774px;
+}
