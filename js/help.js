@@ -31,11 +31,6 @@ $("#helpOther").click(function(){
 	$("#helpTicket").attr("class", "");
 });
 
-setInterval(function(){
-	$("#fingerLight").animate({opacity: '0',}, 1000, function(){
-		$("#fingerLight").animate({opacity: '0.5',}, 1000);
-	});
-}, 2000);
 
 
 
@@ -47,12 +42,17 @@ var cancelBlur;
 var blurFlag = 0;
 $("#finger").click(function(){
 	if (blurFlag == 0){
-		a.animate({
-			opacity: 0,
-			},
-			1000, function() {
-					/* stuff to do after animation is complete */
-		});
+		a.animate({opacity: 0},1000, null);
+		setTimeout(function(){
+			b.animate({opacity:1}, 2000, null);
+		},500)
+		blurFlag = 1;
+		/*a.animate({opacity: 1}, 1000, null)*/
+	}
+	else{
+		a.animate({opacity: 1},2000, null);
+		b.animate({opacity:0}, 1000, null);
+		blurFlag = 0;
 	}
 })
 /*
