@@ -45,18 +45,17 @@ b = $("#thanksInfo");
 var startBlur;
 var cancelBlur;
 var blurFlag = 0;
-/*$("#finger").click(function(){
+$("#finger").click(function(){
 	if (blurFlag == 0){
 		a.animate({
-			filter: "blur(10px)",
+			opacity: 0,
 			},
 			1000, function() {
-				a.css("-webkit-filter", "blur(10px)");
-
+					/* stuff to do after animation is complete */
 		});
 	}
-})*/
-
+})
+/*
 $("#finger").click(function(){
 	clearInterval(cancelBlur);
 	startBlur = setInterval(function(){
@@ -86,8 +85,8 @@ $("#finger").click(function(){
 				}
 			}, 10)
 		}*/
-	}, 10)
-})
+/*	}, 10)
+})*/
 
 /*$("#finger").mouseup(function(){
 	clearInterval(startBlur);
