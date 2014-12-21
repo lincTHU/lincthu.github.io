@@ -57,20 +57,39 @@ var blurFlag = 0;
 	}
 })*/
 
-$("#finger").mousedown(function(){
+$("#finger").click(function(){
 	clearInterval(cancelBlur);
 	startBlur = setInterval(function(){
 		blurSize += 0.3;
 		a.css("-webkit-filter", "blur("+blurSize+"px)");
 		if (blurSize > 10)
 			b.css("opacity", (blurSize-10)/25);
-		if (blurSize >= 25){
+		setTimeout(function(){
 			clearInterval(startBlur);
-		}
+			cancelBlur = setInterval(function(){
+				blurSize -= 0.1;
+				a.css("-webkit-filter", "blur("+blurSize+"px)");
+				b.css("opacity", (blurSize-10)/25);
+				if (blurSize <= 0){
+					clearInterval(cancelBlur);
+				}
+			}, 1000)
+		}, 1000)
+/*		if (blurSize >= 25){
+			clearInterval(startBlur);
+			cancelBlur = setInterval(function(){
+				blurSize -= 0.1;
+				a.css("-webkit-filter", "blur("+blurSize+"px)");
+				b.css("opacity", (blurSize-10)/25);
+				if (blurSize <= 0){
+					clearInterval(cancelBlur);
+				}
+			}, 10)
+		}*/
 	}, 10)
 })
 
-$("#finger").mouseup(function(){
+/*$("#finger").mouseup(function(){
 	clearInterval(startBlur);
 	cancelBlur = setInterval(function(){
 		blurSize -= 0.1;
@@ -81,3 +100,4 @@ $("#finger").mouseup(function(){
 		}
 	}, 10)
 })
+*/
