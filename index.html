@@ -1,236 +1,305 @@
-﻿<!DOCTYPE html>
-<html charset="utf8">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>HomePage|Linc</title>
-<link href="font.css" type="text/css" rel="stylesheet"/>
-<style type="text/css">
-	div#Header 
-	{
-		background: rgb(56,56,56);
-		position: fixed;
-		z-index: 4;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		width: 240px;
-		font-family: "Calibri";
-	}
-	img#Homeicon
-	{
-		margin-top: 30px;
-		margin-left: 55px;
-		width: 110px;
-		height: 110px;
-	}
-	nav.Navigation
-	{
-		position: absolute;
-		top: 35%;
-	}
-	img.Menu_icon
-	{
-		float: left;
-		width: 42px;
-		height: 42px;
-		margin-top: 25px;
-		margin-left: 25px;
-		display: block;
-	}
-	span.Menu_item
-	{
-		font-size: 30px;
-		color: white;
-		display: block;
-		padding:18px 0 0 80px;
-	}
-	span.Menu_subitem
-	{
-		font-size: 15px;
-		color:rgb(120, 120, 120);
-		display: block;
-		margin-left:80px;
-	}
-	div#Contact
-	{
-		position: absolute;
-		margin-left: 25px;
-		bottom: 3%;
-	}
-	img.ContactIcon
-	{
-		width: 23%;
-	}
-	footer#Footer
-	{
-		position: absolute;
-		bottom: 1%;
-		left: 20%;
-	}
-	section#About
-	{
-		text-align: center;
-		color: white;
-		font-family: "Eras Light ITC";
-		font-size: 15px;
-	}
-	div.Pages
-	{
-		z-index: 1;
-	}
-	section#HomePage
-	{
-		background: url(sites/images/wallpaper.jpg) no-repeat;
-		background-position: center bottom !important; 
-		background-size: cover; 
-		position: absolute;
-		top: 0;
-		left: 240px;
-		right: 0;
-		bottom: 0;
-		color: white;
-	}
-	div#Mission_Link
-	{
-		height: 270px;
-		margin-left:300px;
-		float:left; 
-		display:inline;
-	}
-	div#Blog_Link
-	{
-		height: 270px;
-		margin-left:100px;
-		float:left; 
-		display:inline;
-	}
-	div#Result_Link
-	{
-		height: 270px;
-		margin-left:100px;
-		float:left; 
-		display:inline;
-	}
-	article#Menu_Header
-	{
-		text-align: center;
-		position: absolute;
-		width: 100%;
-		height: 450px;
-		top:25%;
-	}
-	img.Link_Icon
-	{
-		width: 180px;
-	}
-	a.Menu_Buttom
-	{
-		position:relative;
-		margin-top:20px;
-		display:block;
-		width:180px;
-		height:50px;
-		border:2px solid white;
-		font-size:20px;
-		line-height:50px;
-		text-align:left;
-		color:#0255fd;
-		font-family:"Euphemia";
-		background-image:url(sites/images/Arrows.png);
-		background-repeat:no-repeat;
-		background-size:36px, 30px;
-		background-position:130px center;
-	}
-	div#Header_Content
-	{
-		font-family:"Agency FB";
-		margin-top:300px;
-		color:white;
-		font-size:50px;
-		text-align:center;
-	}
-	div#Header_Content1
-	{
-		font-family:"Agency FB";
-		margin-top:20px;
-		color:white;
-		font-size:35px;
-		text-align:center;
-	}
-	img#Introduce
-	{
-		position:absolute;
-		bottom:0%;
-		right:0;
-	}
-</style>
+	<meta charset="UTF-8">
+	<title>Linc|Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+	<script src="js/jquery.js"></script>
 </head>
 <body>
-
-	<div id = "Header" class = "Header">
-		<div id = "HomePage">
-			<a href="index.html">
-				<img id = "Homeicon" src="sites\icons\HomeIcon.png">
-			</a>
-		</div>
-			<nav id = "Navigation" class = "Navigation">
-				<div id = "Menu">
-					<li style="list-style-type:none;">
-						<a href="mission.html" style="text-decoration:none">
-						<img class = "Menu_icon" src="sites\icons\Mission.png">
-						<span class = "Menu_item">Mission</span>
-						<span class = "Menu_subitem">Know I'm up to do</span>
-						</a>
-					</li>
-					<li style="list-style-type:none;">
-						<a href="blog.html" style="text-decoration:none">
-						<img class = "Menu_icon" src="sites\icons\Blog.png">
-						<span class = "Menu_item">Blog</span>
-						<span class = "Menu_subitem">See what I am doing</span>
-						</a>
-					</li>
-					<li style="list-style-type:none;">
-						<a href="result.html" style="text-decoration:none">
-						<img class = "Menu_icon" src="sites\icons\Result.png">
-						<span class = "Menu_item">Result</span>
-						<span class = "Menu_subitem">Get what I have done</span>
-						</a>
-					</li>
-				</div>
-			</nav>
-		<div id = "Contact">
-			<div id = "ContactMenu">
-				<a href="http://weibo.com/3099520211"><img class = "ContactIcon"src="sites\icons\weibo.png"></a>
-				<a href="http://www.renren.com/464993806"><img class = "ContactIcon"src="sites\icons\renren.png"></a>
-				<a href="http://space.bilibili.tv/1489243"><img class = "ContactIcon"src="sites\icons\bilibili.png"></a>
-			</div>
-		</div>
-		<footer id = "Footer">
-			<section id = "About">Made in THU 2014</section>
-		</footer>
+	
+	<div id = "Cover">
+		<div id = "title">Portfolio</div>
+		<div id = "content">Software | Game Project</div>
+		<div id = "author">Cong Lin<br>Tsinghua University</div>
 	</div>
 
-	<div class = "Pages">
-		<section id = "HomePage">
-			<article id = "Menu_Header">
-				<div id = "Mission_Link">
-					<img class = "Link_Icon" src="sites/icons/Mission1.png">
-					<a href="mission.html" class = "Menu_Buttom"  style="text-decoration:none"> &nbsp MISSION</a>
-				</div>
-				<div id = "Blog_Link">
-					<img class = "Link_Icon" src="sites/icons/Blog1.png">
-					<a href="blog.html" class = "Menu_Buttom"  style="text-decoration:none"> &nbsp BLOG</a>
-				</div>
-				<div id = "Result_Link">
-					<img class = "Link_Icon" src="sites/icons/Result1.png">
-					<a href="result.html" class = "Menu_Buttom"  style="text-decoration:none"> &nbsp RESULT</a>
-				</div>
-				<div id = "Header_Content">Everything that kills me makes me feel alive.</div>
-				<div id = "Header_Content1">Young, but I'm not that bold.<br>And I don't think the world is sold.</div>
-			</article>
-			<a href="introduction.html">
-					<img id = "Introduce" src="sites\icons\Introduce.png">
-			</a>
-		</section>
+	<div id = "Content">
+		<div class = "topBar"></div>
+		<div id = "contTitle">Content</div>
+		<div class = "cont">1. Academic Software Project</div>
+			<ul class = "contLi">
+				<li>Image Processing</li>
+				<li>Realistic Display of Mesh Model</li>
+				<li>Seat Reservation System</li>
+			</ul>
+		<div class = "cont">2. Game Development</div>
+			<ul class = "contLi">
+				<li>Colliball</li>
+				<li>Bicolor</li>
+				<li>FruitRun</li>
+			</ul>
+		<div class = "btmBar"></div>
 	</div>
+
+	<div id = "SoftwareCover" class = "pageCover">
+		<div class = "coverTitle">Software Project</div>
+	</div>
+	
+	<div id = "S1">
+		<div class = "hideBar"></div>
+		<div class = "numBlock"><div class = "blockFont">No.1</div></div>
+		<div class = "Sw_title">Image Processing</div>
+		<div class = "Sw_content">
+		· Introduction<br>&nbsp   
+		This is a casual software based on OpenCV which you can use to liquefy, beautify or recolor your pictures. Just looks like a simple Photoshop.
+		<br><br>· Duty
+   		<br>&nbsp   Software Development
+		<br><br>· Advisor
+   		<br>&nbsp   Prof. Chen Li, Tsinghua Univ.
+		</div>
+		<div id = "sw1_pic1"><img  src="img/Image_006.jpg"></div>
+		<div  class = "imgUl">
+		<div class = "imgLi"><img src = "img/Image_008.jpg"></div>
+		<div class = "imgLi"><img src = "img/Image_011.jpg"></div>
+		<div class = "imgLi"><img src = "img/Image_012.jpg"></div>
+		</div>
+		<div class = "imgUl">
+		<div class = "imgLi"><img src = "img/Image_013.jpg"></div>
+		<div class = "imgLi"><img src = "img/Image_016.jpg"></div>
+		<div class = "imgLi"><img src = "img/Image_017.jpg"></div>
+		</div>
+		<div class = "imgUl">
+		<div id = "sw1_pic2" class = "imgLi"><img src = "img/Image_018.jpg"></div>
+		</div>
+		<div class = "imgUl">
+		<div id = "sw1_pic3" class = "imgLi"><img src = "img/Image_020.jpg"></div>
+		</div>
+		<div class = "BtmHideBar"></div>
+		<div class = "Sw_Bar"></div>
+	</div>
+
+	<div id = "S2">
+		<div class = "hideBar"></div>
+		<div class = "numBlock"><div class = "blockFont">No.2</div></div>
+		<div class = "Sw_title">Realistic Display of Mesh Model</div>
+		<div class = "Sw_content">
+		· Introduction
+		<br> &nbsp This is a casual software based on OpenGL that can read a mesh file and display its 3D model which has texture, shadow and light.
+		<br><br>· Duty
+		<br> &nbsp  Software Development
+		<br><br>· Advisor
+		<br>  &nbsp Prof. Youhui Zhang, Tsinghua Univ.
+		<br><br>· Dowload Link
+		<br>&nbsp <a target="_blank" href="https://www.dropbox.com/s/g08y1b6xn8g1ija/MeshDisplay.zip?dl=0">Click Here.</a>
+		<div class = "imgUl">
+		<div id = "sw2_pic1" class = "imgLi"><img src = "img/Image_030.jpg"></div>
+		</div>
+		</div>
+		<div class = "BtmHideBar"></div>
+		<div class = "Sw_Bar"></div>
+	</div>
+
+	<div id = "S3">
+		<div class = "hideBar"></div>
+		<div class = "numBlock"><div class = "blockFont">No.3</div></div>
+		<div class = "Sw_title">Seat Reservation Platform</div>
+		<div class = "Sw_content">
+		· Introduction
+		<br>&nbsp  This is a Wechat platform where students could learn campus news and win the tickets to diverse activities. Our group built it for the Youth League Committee of Tsinghua University which is satisfied with our work and use it till now.
+		<br><br>· Duty
+		<br>&nbsp  UI design, Front-end web development
+		<br><br>· Group Member
+		<br>&nbsp  Cong Lin, Bowei Zhou, Yanzhe Yang
+		<br><br>· Advisor
+		<br>&nbsp  Prof. Qiang Liu, Tsinghua Univ.
+		<div class = "imgUl">
+		<div id = "sw3_pic1" class = "imgLi"><img src = "img/Image_033.jpg"></div>
+		</div>
+		</div>
+		<div id = "detailFrame"><div id = "picDetail">· Design Details</div></div>
+		<div id = "sw3_pic2" class = "imgUl">
+		<div class = "imgLi"><img src = "img/Image_037.png"></div>
+		<div class = "imgLi"><img src = "img/Image_038.png"></div>
+		</div>
+		<div id = "sw3_pic3" class = "imgUl">
+		<div class = "imgLi"><img src = "img/Image_041.png"></div>
+		<div class = "imgLi"><img src = "img/Image_042.png"></div>
+		</div>
+		<div id = "sw3_pic4" class = "imgUl">
+		<div class = "imgLi"><img src = "img/Image_045.png"></div>
+		<div class = "imgLi"><img src = "img/Image_046.png"></div>
+		</div>
+		<div class = "BtmHideBar"></div>
+		<div class = "Sw_Bar"></div>
+	</div>
+
+	<div id = "gameCover" class = "pageCover">
+		<div class = "coverTitle">Game Project</div>
+	</div>
+
+	<div id = "G1">
+		<div class = "hideBar"></div>
+		<div class = "numBlock"><div class = "blockFont">No.1</div></div>
+		<div class = "gm_title">Colliball</div>
+		<div class = "gm_content">
+		· Introduction
+		 <br>&nbsp  This is a casual game which is simple, funny and fresh in image. It’s suitable to be entertained with friends together before or after meals to kill the time.
+
+		<br><br>· Duty
+		<br>&nbsp   Software Development
+
+		<br><br>· Advisor
+		<br>&nbsp   Prof. Qiang Liu, Tsinghua Univ.
+
+		<br><br>· Dowload Link
+		<br>&nbsp   <a target="_blank" href="https://www.dropbox.com/s/f2ssfg9orvwlmzo/Project%20I_Colliball.zip?dl=0">Click Here.</a>
+
+		<br><br>· How to Play & Demo 
+		</div>
+		<div class = "gameDemo">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/tcnWhd9pP-M" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class = "gm_content more_details">
+		· Intention
+		 <br>&nbsp  Because I like using solid-colored fresh image style, and I am learning HTML and JavaScript, I would like to develop a game with such character as Web homework. Inspired by OLO(a mobile game), my classmate and I decided to transform it into web game to experience the development of a complete gaming.
+
+		<br><br>· My Personal Contribution 
+		<br>&nbsp   This is a group project that I cooperate with another classmate. I am responsible for the mode writing of 2nd  players and 4th players, and my classmate is responsible for writing the on-line version of the game. (The on-line version of the game is not available in the content in the link)
+
+		<br><br>· What I’ve Learned     
+		<br>&nbsp   During writing Colliball, I fully learned how to write a game-related Web page (HTML, CSS, js), mastered the usage of game engine (an open source 2D engine called LufyLegend is applied in the process of writing). I learned to communicate with the developers because during the writing I have mailed the engine developer and game developer. I am indebted to those developers who gave me a lot of help.
+
+		<br><br>· Platform Requirement
+		<br>&nbsp   Any platforms which can get access to network (Windows, Mac) and on which mobile phones can run.
+
+		<br><br>· How To Install
+		<br>&nbsp   Just need to unzip and open the file (index.html) then you can start the game.
+		
+		<br><br>· Related File
+		<br>&nbsp   Index.html	---Game main interface
+		<br>&nbsp   Css			---Web page formatting code
+		<br>&nbsp   Img			---Related picture files
+		<br>&nbsp   Js			---Related game script files
+		<br>&nbsp   Sound		---Game sound effects and background music
+
+		<br><br>· Preview
+		</div>
+		<div id = "sw3_pic4" class = "imgUl">
+		<div class = "imgLi"><img src = "img/Image_052.jpg"></div>
+		
+		</div>
+
+		<div id = "sw3_pic4" class = "imgUl">
+		
+		<div class = "imgLi"><img src = "img/Image_055.png"></div>
+		</div>
+
+		<div class = "BtmHideBar"></div>
+		<div class = "gm_Bar"></div>
+	</div>
+
+	<div id = "G2">
+		<div class = "hideBar"></div>
+		<div class = "numBlock"><div class = "blockFont">No.2</div></div>
+		<div class = "gm_title">FruitRun</div>
+		<div class = "gm_content">
+		· Introduction
+		<br>&nbsp   FruitRun is a fruit themed parkour game. The protagonist is a mangosteen rolling in the pipe, and it needs to collect the coins on the road while dodging flying knives and needles on the ground, breaking through closed doors and other obstacles.
+		<br><br>· Duty
+		<br>&nbsp   Software Development
+		<br><br>· Advisor
+		<br>&nbsp   Prof. Qiang Liu, Tsinghua Univ.
+		<br><br>· Dowload Link
+		<br>&nbsp   <a target="_blank" href="https://www.dropbox.com/s/f2ssfg9orvwlmzo/Project%20I_Colliball.zip?dl=0">Click Here.</a>
+		<br><br>· How to Play & Demo
+		</div>
+		<div class = "gameDemo">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/0mILxLev6cg" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class = "gm_content more_details">
+		· Intention
+		 <br>&nbsp  I want to learn to use the Unity3D engine, and accumulate experience of designing and writing games. By chance my second degree (digital entertainment design) classmates wanted to develop a game, so we decided to build a team, to experience the development of a complete gaming.
+
+		<br><br>· My Personal Contribution 
+		<br>&nbsp   Our team consists of four members. All staff are involved in the game design discussions. One of us is responsible for the visual design. Another and I are responsible for the game script writing.
+
+		<br><br>· What I’ve Learned     
+		<br>&nbsp   In the very beginning of investigation about Parkour game-related content, I learned a lot of valuable experience and perspective from other developers (students and similar games developers). In the process of designing playing method, I learned to express my ideas to others, and also gained lots of highlights from other people's thoughts and ideas. I learned how to use the Unity3D engine and master the c # game script writing. We needed to take the game to attend TENCENT MINIGAME College Students' Creative Competition which there was a deadline, so I learned how to arrange a reasonable game development schedule, which kept us from being hurried before deadline.
+
+		<br><br>· Platform Requirement
+		<br>&nbsp   Android
+
+		<br><br>· How To Install
+		<br>&nbsp   Install APK files on the Android platform
+		
+		<br><br>· Related File
+		<br>&nbsp   FruitRunV2.5.apk	---Game Installpack
+
+		<br><br>· Preview
+		</div>
+		<div id = "sw3_pic4" class = "imgUl">
+		<div class = "imgLi"><img src = "img/Image_060.jpg"></div>
+		
+		</div>
+
+		<div id = "sw3_pic4" class = "imgUl">
+		
+		<div class = "imgLi"><img src = "img/Image_063.jpg"></div>
+		</div>
+
+		<div class = "BtmHideBar"></div>
+		<div class = "gm_Bar"></div>
+	</div>
+
+	<div id = "G3">
+		<div class = "hideBar"></div>
+		<div class = "numBlock"><div class = "blockFont">No.3</div></div>
+		<div class = "gm_title">Bicolor</div>
+		<div class = "gm_content">
+		· Introduction
+		 <br>&nbsp  Bicolor is a 2-color puzzle game. The gamer should use the arrow key to control the color bar, draw the interface and let it be the same color. I write this game by assembly language in order to master the language and enhance my programming capability.
+
+
+		<br><br>· Duty
+		<br>&nbsp   Software Development
+
+		<br><br>· Advisor
+		<br>&nbsp   Prof. Qiang Liu, Tsinghua Univ.
+
+		<br><br>· Dowload Link
+		<br>&nbsp   <a target="_blank" href="https://www.dropbox.com/s/7ej778uvxusc6v0/Project%20III_Bicolor.zip?dl=0">Click Here.</a>
+
+
+		<br><br>· How to Play & Demo 
+		</div>
+		<div class = "gameDemo">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/lRQXAiTDAIs" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class = "gm_content more_details">
+		· Intention
+		 <br>&nbsp  I like using solid-colored fresh image style, and I am learning assembly language. So I would like to develop a game with such character to improve my programming skill. 
+
+		<br><br>· My Personal Contribution 
+		<br>&nbsp   This is a personal project. So I wrote it by myself. 
+
+		<br><br>· What I’ve Learned     
+		<br>&nbsp   During writing Bicolor, I mastered the usage of assembly language. And I learn that sometimes assembly language can help us enhance the efficiency of a function.
+
+		<br><br>· Platform Requirement
+		<br>&nbsp   Windows 7, 8
+
+		<br><br>· How To Install
+		<br>&nbsp   Just need to unzip and open the file then you can start the game.
+		
+		<br><br>· Game Interface
+		</div>
+		<div id = "sw3_pic4" class = "imgUl">
+		<div class = "imgLi"><img src = "img/Image_067.jpg"></div>
+		<div class = "imgLi"><img src = "img/Image_068.jpg"></div>
+		</div>
+
+		<div id = "sw3_pic4" class = "imgUl">
+		<div class = "imgLi"><img src = "img/Image_071.jpg"></div>
+		<div class = "imgLi"><img src = "img/Image_072.jpg"></div>
+		</div>
+
+		<div class = "BtmHideBar"></div>
+		<div class = "gm_Bar"></div>
+	</div>
+	<div id = "arrowLeft"><img src = "img/left.png"></div>
+	<div id = "arrowRight"><img src = "img/right.png"></div>
 </body>
+<script src="js/index.js"></script>
 </html>

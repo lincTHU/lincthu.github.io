@@ -1,0 +1,86 @@
+/*green color: rgb(145, 208, 80);*/
+#gameCover{
+	display: none;
+	background-color: rgb(145, 208, 80);
+}
+
+#gameCover .coverTitle{
+	width: 7.5em;
+}
+
+/*gameproject*/
+#G1{
+	display: none;
+}
+
+#G2{
+	display: none;
+}
+
+#G3{
+	display: none;
+}
+
+
+#G1 a, #G2 a, #G3 a{
+	color: rgb(145, 208, 80);
+}
+#G1 .numBlock, #G2 .numBlock, #G3 .numBlock{
+	background-color: rgb(145, 208, 80);
+}
+
+
+#G1 .gm_title, #G2 .gm_title, #G3 .gm_title{
+	color: rgb(145, 208, 80);
+	z-index: 6;
+}
+
+.gm_title{
+	font-size: 2.5em;
+	font-weight: bold;
+	position: fixed;
+	top: 1.8em;
+	left: 6em;
+}
+
+.gm_Bar{
+	position: fixed;
+	bottom: 0;
+	height: 3em;
+	width: 100%;
+}
+
+#G1 .gm_Bar, #G2 .gm_Bar, #G3 .gm_Bar{
+	background-color: rgb(145, 208, 80);
+}
+
+.gm_content{
+	color: rgb(145, 208, 80);
+	font-size: 2em;
+	width: 70%;
+	margin-left: 8em;
+	margin-top: 5em;
+}
+
+.gameDemo{
+	margin-top: 2em;
+	text-align: center;
+}
+
+.more_details{
+	margin-top: 1em;
+}
+
+/*arrow*/
+#arrowLeft{
+	position: fixed;
+	left: 0;
+	top: 45%;
+	display: none;
+}
+
+#arrowRight{
+	position: fixed;
+	right: 0;
+	top: 45%;
+}

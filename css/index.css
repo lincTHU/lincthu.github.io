@@ -1,0 +1,298 @@
+/*blue color: rgb(0, 150, 205);*/
+/*gray color: rgb(90, 90, 90);*/
+@font-face{ 
+font-family: arial;
+src: url('../font/arial.ttf');
+} 
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	font-family: "arial";
+}
+ul{
+	margin-top: 0;
+}
+
+#Cover{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+#title{
+	font-size: 4em;
+	color: rgb(0, 150, 205);
+}
+
+#content{
+	font-size: 2em;
+	color: rgb(90, 90, 90);
+}
+
+#author{
+	font-size: 1.2em;
+	color: rgb(90, 90, 90);
+	margin-top: .5em;
+}
+
+/*ContentPage*/
+#Content{
+	color: rgb(90, 90, 90);
+	display: none;
+}
+
+.topBar, .btmBar{
+	position: absolute;
+	height: 3em;
+	width: 100%;
+	
+}
+
+#Content .topBar, #Content .btmBar{
+	background-color: rgb(90, 90, 90);
+}
+
+.topBar{
+	top: 0;
+}
+
+.btmBar{
+	bottom: 0;
+}
+
+
+#contTitle{
+	font-weight: bold;
+	font-size: 5em;
+}
+
+.cont{
+	font-size: 2em;
+}
+
+
+.contLi{
+	font-size: 2em;
+}
+
+/*SoftwarePage*/
+#SoftwareCover{
+	display: none;
+}
+
+.pageCover{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#SoftwareCover{
+	background-color:  rgb(0, 150, 205);
+}
+
+.coverTitle{
+	color: white;
+	font-size: 4em;
+	text-align: center;
+
+	border-width : 1px;
+ 	border-color : white;
+ 	border-style : solid;
+ 	border-radius: 1px;
+ 	padding: .2em .1em;
+}
+
+#SoftwareCover .coverTitle{
+	width: 7.5em;
+}
+
+/*S1*/
+#S1{
+	display: none;
+}
+
+.hideBar{
+	width: 100%;
+	height: 9em;
+	background-color: white;
+	position: fixed;
+	top: 0;
+}
+
+#S1 .numBlock{
+	background-color: rgb(0, 150, 205);
+}
+
+.numBlock{
+	position: fixed;
+	top: 0;
+	width: 11em;
+	height: 8em;
+	margin-left: 3em;
+	
+
+}
+
+.blockFont{
+	padding-top: .7em;
+	color: white;
+	text-align: center;
+	font-size: 4em;
+	font-weight: bold;
+	
+}
+
+#S1 .Sw_title{
+	color: rgb(0, 150, 205);
+	z-index: 6;
+}
+
+.Sw_title{
+	font-size: 2.5em;
+	font-weight: bold;
+	position: fixed;
+	top: 1.8em;
+	left: 6em;
+}
+
+.Sw_Bar{
+	position: fixed;
+	bottom: 0;
+	height: 3em;
+	width: 100%;
+}
+
+#S1 .Sw_Bar{
+	background-color: rgb(0, 150, 205);
+}
+
+.Sw_content{
+	color: rgb(0, 150, 205);
+	font-size: 2em;
+	width: 70%;
+	margin-left: 8em;
+	margin-top: 5em;
+}
+
+#sw1_pic1{
+	margin-top: 2em;
+	text-align: center;
+}
+
+.BtmHideBar{
+	width: 100%;
+	height: 5em;
+	background-color: white;
+}
+
+.imgUl{
+	text-align: center;
+	margin-top: 1.5em;
+
+}
+.imgLi{
+	display: inline;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+
+.imgLi img{
+	height: 20em;
+}
+
+#sw1_pic2 img{
+	height: 25em;
+}
+
+#sw1_pic3 img{
+	height: 23em;
+}
+
+/*S2*/
+#S2{
+	display: none;
+}
+#S2 .numBlock{
+	background-color: rgb(0, 150, 205);
+}
+
+#S2 .Sw_title{
+	color: rgb(0, 150, 205);
+	z-index: 6;
+}
+
+#S2 .Sw_Bar{
+	background-color: rgb(0, 150, 205);
+}
+
+#sw2_pic1 img{
+	height: 15em;
+}
+
+/*S3*/
+#S3{
+	display: none;
+}
+
+#S3 .numBlock{
+	background-color: rgb(0, 150, 205);
+}
+
+#S3 .Sw_title{
+	color: rgb(0, 150, 205);
+	z-index: 6;
+}
+
+#S3 .Sw_Bar{
+	background-color: rgb(0, 150, 205);
+}
+
+#sw3_pic1 img{
+	height: 15em;
+}
+
+#picDetail{
+	color: rgb(0, 150, 205);
+	font-size: 1em;
+	text-align: left;
+}
+
+#sw3_pic2 img, #sw3_pic3 img, #sw3_pic4 img{
+	height: 25em;
+}
+
+#sw3_pic3 .imgLi{
+	margin-left: 0.5em;
+	margin-right: 1.8em;
+}
+
+#sw3_pic4 .imgLi{
+	margin-left: 0.5em;
+	margin-right: 4.3em;
+}
+
+
+#detailFrame{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#picDetail{
+	font-size: 2em;
+	margin-left: 1em;
+}
+
+#S1 a, #S2 a, #S3 a{
+	color: rgb(0, 150, 205);
+}
