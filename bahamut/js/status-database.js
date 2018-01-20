@@ -28,21 +28,21 @@ var hoverDB = {
 		"src": "img\\hover\\map.png"
 	},
 	"neurolink": {
-		"src": "img\\hover\\map.png"
+		"src": "img\\hover\\neurolink.png"
 	},
 	"twister": {
-		"src": "img\\hover\\map.png"
+		"src": "img\\hover\\twister.png"
 	},
 	"fireball": {
-		"src": "img\\hover\\map.png"
+		"src": "img\\hover\\fireball.png"
 	},
 	"manatriangle": {
-		"src": "img\\hover\\map.png"
+		"src": "img\\hover\\manatriangle.png"
 	},
 	"manaball": {
-		"src": "img\\hover\\map.png"
+		"src": "img\\hover\\manaball.png"
 	},
 	"firecircle": {
-		"src": "img\\hover\\map.png"
+		"src": "img\\hover\\firecircle.png"
 	}
 }

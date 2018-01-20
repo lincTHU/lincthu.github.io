@@ -35,7 +35,7 @@
 	font-size: 18px;
     margin-top: 2px;
     color: #eee;
-    text-shadow: 0em 0em 2px #000, 0em 0em 2px #000, 0em 0em 2px #000, 0em 0em 6px #000, 0em 0em 6px #000;
+    text-shadow: 0em 0em 0.2rem #000, 0em 0em 0.2rem #000, 0em 0em 0.2rem #000, 0em 0em 0.3rem #000, 0em 0em 0.3rem #000;
 }
 
 .info-content-discription>li{
@@ -157,16 +157,16 @@
 	font-size: 25px;
 	color: #E4DFD6;
 	text-shadow: 
-	0em 0em 2px #000, 
-	0em 0em 2px #000, 
-	0em 0em 2px #000, 
-	0em 0em 6px #000, 
-	0em 0em 6px #000;
+	0em 0em 0.1rem #000, 
+	0em 0em 0.1rem #000, 
+	0em 0em 0.1rem #000, 
+	0em 0em 0.3rem #000, 
+	0em 0em 0.3rem #000;
 	font-family: "方正姚体";
 }
 
 .info-section h3,h4,h5, p, li{
-    text-shadow: 0 0 2px #222;
+    text-shadow: 0 0 0.1rem #222;
 }
 
 .info-section li{
@@ -181,7 +181,7 @@
     -webkit-margin-before: 0.83em;
     -webkit-margin-after: 0.83em;
 
-    text-shadow: 0 2px 3px #222;
+    text-shadow: 0 0 0.2rem #222;
 }
 
 .info-section h3{
