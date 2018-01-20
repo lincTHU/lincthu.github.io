@@ -8,17 +8,17 @@ var statusDB = {
     "Neurolink": {
 		"name": "拘束",   
 		"src": "img\\status\\Neurolink.png", 
-		"info": "受到拘束，造成的伤害大幅度减少(90%)，同时大幅度减少来自特定技能的伤害。"
+		"info": "受到拘束，造成的伤害大幅度减少(90%)，同时大幅度减少来自特定技能的伤害"
 	},
     "SlashingResistanceDownII": {
-		"name": "斩击耐性大幅度下降",   
+		"name": "斩击耐性大幅降低",   
 		"src": "img\\status\\SlashingResistanceDownII.png", 
-		"info": "受到拘束，造成的伤害大幅度减少(90%)，同时大幅度减少来自特定技能的伤害。",
+		"info": "斩击耐性大幅降低，增加受到斩击属性攻击的伤害（双塔尼亚普攻造成的伤害变为7w+）",
 		"duration": 35
 	},
     "ManaHypersensitivity": {
 		"name": "魔力过敏症",   
 		"src": "img\\status\\ManaHypersensitivity.png", 
-		"info": "提高受到来自\"魔力炼成\"的伤害。"
+		"info": "增加魔力压缩球爆炸时\"魔力飞散\"的伤害(即死)"
 	}
 }

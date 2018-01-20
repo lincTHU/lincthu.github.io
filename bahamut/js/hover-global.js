@@ -1,3 +1,4 @@
+$(".hover-frame").hide();
 
 $(".status-area").mouseenter(
 	function(){

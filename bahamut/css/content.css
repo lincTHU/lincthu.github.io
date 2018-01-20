@@ -219,7 +219,7 @@
 }
 
 .timeline-area{
-	margin: 2rem auto;
+	margin: .5rem auto;
 }
 
 .attention-part{
@@ -230,4 +230,8 @@
 	text-decoration: none;
 	cursor:default;
 	color: red!important;
+}
+
+.text-align-center{
+    text-align: center;
 }
