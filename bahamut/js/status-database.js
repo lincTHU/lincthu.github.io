@@ -33,8 +33,8 @@ var hoverDB = {
 	"twister": {
 		"src": "img\\hover\\twister.png"
 	},
-	"fireball": {
-		"src": "img\\hover\\fireball.png"
+	"firetriangle": {
+		"src": "img\\hover\\firetriangle.png"
 	},
 	"manatriangle": {
 		"src": "img\\hover\\manatriangle.png"
