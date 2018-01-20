@@ -3,8 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Twintania</title>
-	
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
 	<link rel="stylesheet" type="text/css" href="css/guide-global.css">
 	<link rel="stylesheet" type="text/css" href="css/hover-global.css">
@@ -16,7 +14,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
 </head>
 <body>
-	<div class="hover-frame">
+	<div id="image-frame">
+		<img class="hover-img" src="img/hover/map.png" alt="">
+	</div>
+	<div id="status-frame" class="hover-frame">
 		<div class="hover-block">
 			<div class="hover-header">
 				<div>
@@ -166,11 +167,14 @@
 													<li>完成下列任务</li>
 													<li>欧米茄零式时空狭缝 德尔塔环境4</li>
 													<br>
-													<li >黄金港·异国的诗人(11.5, 12.6)领取任务</li>
-													<div class="info-map" data-role="collapsible">
-														<h1>点击展开小地图</h1>
-														<p><img class="info-map-img" src="img/map.png" alt=""></p>
-													</div>
+													<li>从
+														<a  class="img-hover-area" name="map">
+															<img src="img/hover-sign.png" alt="">
+															&nbsp;&nbsp;&nbsp;黄金港·异国的诗人(11.5, 12.6)
+														</a>
+														处领取任务。
+													</li>	
+													<br><br><br><br>
 												</div>
 											</div>
 										</div>
@@ -199,8 +203,13 @@
 									<br>
 									<hr />
 									<h3>核心机制-『拘束装置』</h3>
-									<p>当双塔尼亚的血量被削减至74%,44%和0%时，会在BOSS所在位置依次掉落三个『拘束装置』。玩家站在拘束装置上，会获得
-										<a href="" class="status-area" name="Neurolink">
+									<p>当双塔尼亚的血量被削减至74%,44%和0%时，会在BOSS所在位置依次掉落三个
+										<a  class="img-hover-area" name="neorolink">
+											<img src="img/hover-sign.png" alt="">
+											&nbsp;&nbsp;&nbsp;拘束装置
+										</a>
+										。玩家站在拘束装置上，会获得
+										<a class="status-area" name="Neurolink">
 											<img src="img/status/Neurolink.png" alt="">
 											&nbsp;&nbsp;&nbsp;拘束
 										</a>
@@ -219,13 +228,23 @@
 									<li>普攻:每3秒对当前MT的单体攻击，中等「物理」「斩属性」伤害。
 									<li>垂直下落：「物理」顺劈技能。BOSS正前方扇形范围攻击，造成大量「物理」伤害。</li>
 									<li>死刑：换坦机制，死刑技能。对当前坦克造成特大「物理伤害」，并附加一层
-										<a href="" class="status-area" name="SlashingResistanceDownII">
+										<a  class="status-area" name="SlashingResistanceDownII">
 											<img src="img/status/SlashingResistanceDownII.png" alt="">
 											&nbsp;&nbsp;&nbsp;斩击耐性大幅降低
 										</a>
 										效果。</li>
-									<li>旋风：即死机制。读条结束时在任意四名玩家脚下刷新一个旋风。玩家踩中旋风时，旋风将会爆炸秒杀上面的玩家，并将周围玩家击退到场地边缘导致死亡。玩家需要在判定前保持移动，躲开脚下的旋风。</li>
-									<li>火球：分摊机制。BOSS点名一名玩家头上出现红色三角标记，并在6秒后对标记玩家造成大量「魔法」伤害，伤害可以由小范围内的其余玩家一起分摊。无减伤下7人分摊伤害大概在3w7左右。</li>
+									<li>旋风：即死机制。读条结束时在任意四名玩家脚下刷新一个
+										<a  class="img-hover-area" name="twister">
+											<img src="img/hover-sign.png" alt="">
+											&nbsp;&nbsp;&nbsp;旋风
+										</a>
+										。玩家踩中旋风时，旋风将会爆炸秒杀上面的玩家，并将周围玩家击退到场地边缘导致死亡。玩家需要在判定前保持移动，躲开脚下的旋风。</li>
+									<li>火球：分摊机制。BOSS点名一名玩家头上出现
+										<a  class="img-hover-area" name="fireball">
+											<img src="img/hover-sign.png" alt="">
+											&nbsp;&nbsp;&nbsp;红色三角标记
+										</a>
+									，并在6秒后对标记玩家造成大量「魔法」伤害，伤害可以由小范围内的其余玩家一起分摊。无减伤下7人分摊伤害大概在3w7左右。</li>
 									<h4>阶段时间轴</h4>
 									<div id="p1.1-timeline-area" class="timeline-area"></div>
 									<h4>阶段详解</h4>
@@ -249,15 +268,30 @@
 									<hr />
 									<h3>第一个『拘束装置』掉落后(74%～44%)</h3>
 									<h4>新增技能</h4>
-									<li>魔力炼成：诱导机制。一名DPS将会被点名紫色三角，同时双塔尼亚正下方会生成一个黑球，并缓慢加速朝被定名的玩家移动。该玩家需要站在『拘束装置』内引爆黑球——黑球会爆炸产生中等范围的AOE，对『拘束装置』内玩家造成少量伤害，秒杀范围内的其他玩家。同时，被点名玩家将会被附加
-										<a href="" class="status-area" name="ManaHypersensitivity">
+									<li>魔力炼成：诱导机制。一名DPS将会被点名
+										<a  class="img-hover-area" name="manatriangle">
+											<img src="img/hover-sign.png" alt="">
+											&nbsp;&nbsp;&nbsp;紫色三角标记
+										</a>
+										，同时双塔尼亚正下方会生成一个黑球
+										<a  class="img-hover-area" name="manaball">
+											<img src="img/hover-sign.png" alt="">
+											&nbsp;&nbsp;&nbsp;魔力压缩体
+										</a>
+										，并缓慢加速朝被定名的玩家移动。该玩家需要站在『拘束装置』内引爆黑球——黑球会爆炸产生中等范围的AOE，对『拘束装置』内玩家造成少量伤害，秒杀范围内的其他玩家。同时，被点名玩家将会被附加
+										<a  class="status-area" name="ManaHypersensitivity">
 											<img src="img/status/ManaHypersensitivity.png" alt="">
 											&nbsp;&nbsp;&nbsp;魔力过敏症
 										</a>
 										效果——使得下一次碰到黑球时会被直接秒杀。
 									</li>
-									<li>液体地狱：诱导机制。BOSS对离自身较远（超过一定距离）的玩家使用五连喷，每次造成2k左右的伤害并在玩家脚下留下一个火圈。踩在火圈里会获得
-										<a href="" class="status-area" name="Burns">
+									<li>液体地狱：诱导机制。BOSS对离自身较远（超过一定距离）的玩家使用五连喷，每次造成2k左右的伤害并在玩家脚下留下一个
+										<a  class="img-hover-area" name="firecircle">
+											<img src="img/hover-sign.png" alt="">
+											&nbsp;&nbsp;&nbsp;火圈
+										</a>
+										火圈。踩在火圈里会获得
+										<a  class="status-area" name="Burns">
 											<img src="img/status/Burns.png" alt="">
 											&nbsp;&nbsp;&nbsp;火伤
 										</a>
@@ -292,7 +326,7 @@
 									<hr />
 									<h3>第二个『拘束装置』掉落后(44%～0%)</h3>
 									<h4>技能改动</h4>
-									<li>魔力炼成*2：诱导机制。这个阶段将会点名2名DPS，同时生成2个黑球。由于黑球是AOE范围伤害并且带有<a href="" class="status-area"  name="ManaHypersensitivity">
+									<li>魔力炼成*2：诱导机制。这个阶段将会点名2名DPS，同时生成2个黑球。由于黑球是AOE范围伤害并且带有<a  class="status-area"  name="ManaHypersensitivity">
 											<img src="img/status/ManaHypersensitivity.png" alt="">
 											&nbsp;&nbsp;&nbsp;魔力过敏症
 										</a>
@@ -328,9 +362,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="http://lincthu.github.io/bahamut/js/p1-timeline.js"></script>
-	<script src="http://lincthu.github.io/bahamut/js/hover-global.js"></script>
-	<script src="http://lincthu.github.io/bahamut/js/status-database.js"></script>
+	<script src="js/p1-timeline.js"></script>
+	<script src="js/hover-global.js"></script>
+	<script src="js/status-database.js"></script>
 </body>
 
 </html>

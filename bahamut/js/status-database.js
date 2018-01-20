@@ -19,6 +19,30 @@ var statusDB = {
     "ManaHypersensitivity": {
 		"name": "魔力过敏症",   
 		"src": "img\\status\\ManaHypersensitivity.png", 
-		"info": "增加魔力压缩球爆炸时\"魔力飞散\"的伤害(即死)"
+		"info": "增加魔力压缩体爆炸时“魔力飞散”造成的伤害(即死)"
+	}
+}
+
+var hoverDB = {
+	"map": {
+		"src": "img\\hover\\map.png"
+	},
+	"neurolink": {
+		"src": "img\\hover\\map.png"
+	},
+	"twister": {
+		"src": "img\\hover\\map.png"
+	},
+	"fireball": {
+		"src": "img\\hover\\map.png"
+	},
+	"manatriangle": {
+		"src": "img\\hover\\map.png"
+	},
+	"manaball": {
+		"src": "img\\hover\\map.png"
+	},
+	"firecircle": {
+		"src": "img\\hover\\map.png"
 	}
 }

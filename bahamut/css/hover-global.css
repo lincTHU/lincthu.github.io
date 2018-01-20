@@ -108,3 +108,34 @@
 .hover-content-discription>p{
 	padding: 0 2px 0 0;
 }
+
+#image-frame{
+    display: block;
+    position: absolute;
+    z-index: 9999999 !important;
+}
+
+.hover-img{
+    max-width: 250px;
+    height: auto;
+    border-radius: .5rem;
+    box-shadow: 0 0px 8px #111, 0 0px 8px #111;
+}
+
+.img-hover-area{
+    color: #AA0F0F!important;
+    cursor: pointer;
+    text-decoration-line: none;
+    text-shadow: 0 0px 2px #222;
+}
+
+.img-hover-area img{
+    width: 20px;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 2px;
+}
+
+.img-hover-area:hover{
+    background: rgba(170, 15, 15, 0.1);
+}
