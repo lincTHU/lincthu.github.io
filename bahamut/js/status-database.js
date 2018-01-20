@@ -19,10 +19,11 @@ var statusDB = {
     "ManaHypersensitivity": {
 		"name": "魔力过敏症",   
 		"src": "img\\status\\ManaHypersensitivity.png", 
-		"info": "增加魔力压缩体爆炸时“魔力飞散”造成的伤害(即死)"
+		"info": "增加魔力压缩体爆炸时“魔力飞散”造成的伤害(即死)",
+		"duration": 16
 	}
 }
-
+lincthu.github.io/bahamut/img/hover/manaball.png
 var hoverDB = {
 	"map": {
 		"src": "img\\hover\\map.png"

@@ -187,19 +187,24 @@
 									<li>开场顺劈</li>
 									<li>火球+旋风→分散诱导+集合分摊</li>
 									<li>第一次死刑+顺劈</li>
-									<li>火球+旋风（可能压掉）</li>
+									<li>火球+旋风→开始循环直至74%</li>
 									<br>
-									<li>五连喷+黑球+五连喷→诱导（注意后补）</li>
+									<li>五连喷（诱导）</li>
+									<li>黑球+五连喷（诱导+注意后补）</li>
 									<li>第二次死刑</li>
-									<li>黑球+旋风→分散诱导后点名玩家进入拘束装置引爆黑球</li>
+									<li>黑球+旋风→先诱导旋风再引爆黑球</li>
 									<li>顺劈</li>
+									<li>五连喷（诱导）→开始循环直至44%</li>
 									<br>
-									<li>五连喷+黑球</li>
-									<li>五连喷+火球</li>
+									<li>五连喷（诱导）+黑球</li>
+									<li>五连喷（随机）+火球</li>
 									<li>第三次死刑+顺劈</li>
 									<li>黑球+旋风</li>
 									<li>顺劈</li>
-									<li>五连喷+黑球+五连喷+火球→循环</li>
+									<li>五连喷（诱导）+黑球→开始循环至狂暴</li>
+									<li>五连喷（随机）+火球</li>
+									<li>第四次死刑+顺劈</li>
+									<li>以太失控（狂暴）</li>
 									<br>
 									<hr />
 									<h3>核心机制-『拘束装置』</h3>
@@ -208,18 +213,19 @@
 											<img src="img/hover-sign.png" alt="">
 											&nbsp;&nbsp;&nbsp;拘束装置
 										</a>
-										。玩家站在拘束装置上，会获得
+										(由于技能后摇可能会延迟掉落)。玩家站在拘束装置上，会获得
 										<a class="status-area" name="Neurolink">
 											<img src="img/status/Neurolink.png" alt="">
 											&nbsp;&nbsp;&nbsp;拘束
 										</a>
-										状态效果。为了方便处理特定机制，需要将拘束装置大致呈三角形摆放在场地中央，并且两两之间需要间隔一定的距离。为了方便后续攻略的说明，战斗开始前的场地标点如下:
+										效果。为了方便处理特定机制，需要将拘束装置呈等边三角形摆放在场地中央。为了方便后续攻略的说明，战斗开始前的场地标点如下:
 									</p>
 									<div class="figure aligncenter">
 										<img src="img/p1-map.png" alt="">
 										<div>
-											<li>※A点:场地正北 1点:场地中央 全程保持不变</li>
-											<li>※B→C→D点为P1-『拘束装置』放置顺序</li>
+											<li class="text-align-center">※A点:场地正北 1点:场地中央 保持不变</li>
+											<li class="text-align-center">※B→C→D点为P1-『拘束装置』放置顺序</li>
+											<li class="text-align-center">※2点：1点和A点之间，往1点靠近，为P3用点</li>
 										</div>
 									</div>
 									<hr />
@@ -268,6 +274,19 @@
 									<hr />
 									<h3>第一个『拘束装置』掉落后(74%～44%)</h3>
 									<h4>新增技能</h4>
+									<li>液体地狱：诱导机制。BOSS对远处的玩家使用五连喷，每次造成2k左右的伤害并在玩家脚下留下一个
+										<a  class="img-hover-area" name="firecircle">
+											<img src="img/hover-sign.png" alt="">
+											&nbsp;&nbsp;&nbsp;火圈
+										</a>
+										。踩在火圈里会获得
+										<a  class="status-area" name="Burns">
+											<img src="img/status/Burns.png" alt="">
+											&nbsp;&nbsp;&nbsp;火伤
+										</a>
+										效果而被直接秒杀。机制的关键在于「超过一定距离」——如果所有玩家都与BOSS较近，则BOSS将会随机选择目标。如果有多个玩家距离较远，则这几名玩家都有可能成为BOSS的目标。这里推荐1名玩家诱导+1名玩家候补。
+									<p class="attention-part">※治疗注意BOSS在发动「液体地狱」时仍然会对MT使用「普攻」。</p>
+									</li>
 									<li>魔力炼成：诱导机制。一名DPS将会被点名
 										<a  class="img-hover-area" name="manatriangle">
 											<img src="img/hover-sign.png" alt="">
@@ -278,26 +297,31 @@
 											<img src="img/hover-sign.png" alt="">
 											&nbsp;&nbsp;&nbsp;魔力压缩体
 										</a>
-										，并缓慢加速朝被定名的玩家移动。该玩家需要站在『拘束装置』内引爆黑球——黑球会爆炸产生中等范围的AOE，对『拘束装置』内玩家造成少量伤害，秒杀范围内的其他玩家。同时，被点名玩家将会被附加
+											，并缓慢加速朝被定名的玩家移动。该玩家需要进入『拘束装置』内获得
+											<a class="status-area" name="Neurolink">
+												<img src="img/status/Neurolink.png" alt="">
+												&nbsp;&nbsp;&nbsp;拘束
+											</a>
+											效果引爆黑球——黑球会爆炸产生中等范围的AOE，对带有
+											<a class="status-area" name="Neurolink">
+												<img src="img/status/Neurolink.png" alt="">
+												&nbsp;&nbsp;&nbsp;拘束
+											</a>的玩家只造成少量伤害(4k～5k)，范围内的其他玩家则会被秒杀。同时，受到伤害的玩家将会被附加
 										<a  class="status-area" name="ManaHypersensitivity">
 											<img src="img/status/ManaHypersensitivity.png" alt="">
 											&nbsp;&nbsp;&nbsp;魔力过敏症
 										</a>
-										效果——使得下一次碰到黑球时会被直接秒杀。
+										——再次受到黑球伤害时将被直接秒杀。
+										<p class="attention-part">
+											※由于服务器判定问题，即使离开拘束装置
+											<a class="status-area" name="Neurolink">
+												<img src="img/status/Neurolink.png" alt="">
+											&nbsp;&nbsp;&nbsp;拘束
+											</a>
+											效果也不会立刻消失，因此可以在黑球快接近时提前离开拘束装置引爆，减少输出降低的时间。并且在应对复数机制（同时点名黑球+五连喷）时，可以减少踩中火圈的几率。(请根据自身水平谨慎尝试)
+										</p>
 									</li>
-									<li>液体地狱：诱导机制。BOSS对离自身较远（超过一定距离）的玩家使用五连喷，每次造成2k左右的伤害并在玩家脚下留下一个
-										<a  class="img-hover-area" name="firecircle">
-											<img src="img/hover-sign.png" alt="">
-											&nbsp;&nbsp;&nbsp;火圈
-										</a>
-										火圈。踩在火圈里会获得
-										<a  class="status-area" name="Burns">
-											<img src="img/status/Burns.png" alt="">
-											&nbsp;&nbsp;&nbsp;火伤
-										</a>
-										效果而被直接秒杀。如果所有玩家都距离BOSS较近，则BOSS将会随机选择目标。如果有多个玩家同时距离较远，则这几名玩家都会成为BOSS的目标。因此通常由1～2名玩家在远处诱导。
-									<p class="attention-part">※治疗注意BOSS在发动「液体地狱」时仍然会对MT使用「普攻」。</p><br>
-									</li>
+									<br>
 									<h4>阶段时间轴</h4>
 									<div id="p1.2-timeline-area" class="timeline-area"></div>
 									<h4>阶段详解</h4>
@@ -310,9 +334,7 @@
 											<li class="text-align-center">※诱导玩家注意不要将火圈覆盖到『拘束装置』</li>
 										</div>
 									</div>
-									<p class="attention-part">※按照上文旋风的站位，进入第二阶段时远程物理和学者刚好会在最远处。</p><br>
 									<p>接着是组合技「魔力炼成+液体地狱」，被标记的DPS到『拘束装置』内引爆黑球，其余玩家注意远离黑球的爆炸范围。</p>
-									<p class="attention-part">※由于进入『拘束装置』会大幅降低玩家造成的伤害，在熟练后玩家可以在黑球快接近时再进入。</p>
 									<p class="attention-part">※如果诱导玩家被点名黑球，候补玩家记得引导「液体地狱」。</p><br>
 									<p>然后是「死刑」，主副坦记得开好减伤，及时换坦。</p><br>
 									<p>死刑后是组合技「魔力炼成+旋风」——注意，由于黑球从刷新到玩家引爆的过程中BOSS会发动「旋风」，玩家需要在『拘束装置』外先行诱导旋风出现后再进入（参考下图）。</p><br>
@@ -326,21 +348,23 @@
 									<hr />
 									<h3>第二个『拘束装置』掉落后(44%～0%)</h3>
 									<h4>技能改动</h4>
-									<li>魔力炼成*2：诱导机制。这个阶段将会点名2名DPS，同时生成2个黑球。由于黑球是AOE范围伤害并且带有<a  class="status-area"  name="ManaHypersensitivity">
+									<li>液体地狱：诱导+随机机制。这个阶段液体地狱总是成对出现——第一次为诱导机制，同上一阶段。第二次为随机机制，BOSS将会随机瞄准一名玩家，与距离无关。</li>
+									<li>魔力炼成*2：诱导机制。这个阶段将会点名2名DPS，同时生成2个黑球。由于黑球是AOE范围伤害并且会附加<a  class="status-area"  name="ManaHypersensitivity">
 											<img src="img/status/ManaHypersensitivity.png" alt="">
 											&nbsp;&nbsp;&nbsp;魔力过敏症
 										</a>
-										效果，因此2名DPS需要一人站在一个『拘束装置』内，并且这两个『拘束装置』需要间隔足够的距离防止黑球AOE互相覆盖，这也是为什么『拘束装置』需要呈三角摆放的原因。</li>
-									<li>液体地狱：诱导机制。这个阶段只会瞄准一名除MT以外的玩家，与距离无关。</li>
+										效果，因此2名DPS需要一人站在一个『拘束装置』内，同时这两个『拘束装置』需要间隔足够的距离防止黑球AOE互相覆盖，这也是为什么『拘束装置』需要呈三角摆放的原因之一。</li>
+									
 									<h4>阶段时间轴</h4>
 									<div id="p1.3-timeline-area" class="timeline-area"></div>
 									<h4>阶段详解</h4>
-									<p>同上一阶段相同，『拘束装置』掉落后，MT立刻将BOSS拉到下一个位置，同时所有人调整自己的站位——BOSS在不久会发动「液体地狱」。</p>
-									<p class="attention-part">※注意此阶段「液体地狱」是随机点名任意一名玩家。</p><br>
-									<p>然后是「魔力炼成x2」，2名DPS一人在一个『拘束装置』内引爆。</p>
-									<p class="attention-part">※按照攻略中的站位分配，如果黑球点名同侧DPS，推荐远程去另一侧引爆。</p><br>
-									<p>接着是组合技「液体地狱+火球」，被点名液体地狱的玩家注意边引导边朝集合点靠近，第五下喷结束后立刻就是火球分摊，但不要让火圈覆盖了集合点。也可以选择被点名「液体地狱」的人不参与分摊，但由于这名玩家同时有可能被点名「火球」，因此不推荐这样处理，队内请自行斟酌。另外，推荐MT也参与分摊。</p>
-									<p class="attention-part">※治疗注意，如果MT不参与分摊，无减伤下7人分摊的火球平均伤害在3w8左右。被点名「液体地狱」的人还会额外受到2k*5≈1w的伤害。</p>
+									<p>同上一阶段相同，『拘束装置』掉落后，MT立刻将BOSS拉到下一个位置.所有人调整自己的站位——BOSS在不久会发动「液体地狱」组合x2。</p>
+									<br>
+									<p>首先是「液体地狱（诱导）+魔力炼成x2」。液体地狱（诱导）同上一阶段处理方法相同，黑球则由2名DPS一人在一个『拘束装置』内引爆。。</p>
+									<p class="attention-part">※顺位安排：P1的旋风站位已经将左右两侧分别安排了1近战1远程，如果黑球点名同侧DPS，则远程去另一侧引爆。</p><br>
+									<p>接着是「液体地狱（随机）+火球」。被点名液体地狱的玩家边引导火圈边朝集合点靠近，第五下喷结束后立刻就是火球分摊，但不要让火圈覆盖了集合点。也可以选择被点名「液体地狱」的人不参与分摊，但由于这名玩家同时有可能被点名「火球」，因此不推荐这样处理，队内请自行斟酌。另外，推荐MT也参与分摊降低伤害。</p>
+									<p class="attention-part">※之前被点名黑球的玩家有可能刚好被点名液体地狱，引爆黑球的同时注意躲避火圈。</p>
+									<p class="attention-part">※治疗注意，如果MT不参与分摊，无减伤下7人分摊的火球平均伤害在3w7左右。被点名「液体地狱」的人还会额外受到2k*5≈1w的伤害。</p>
 									<p class="attention-part">※如果近战被点名「液体地狱」可以参考下图路线引导（非唯一）。</p><br>
 									<div class="figure aligncenter">
 										<img src="img/p1-liquidhell-melee.png" alt="">
@@ -350,7 +374,9 @@
 									</div>
 									<p>组合技后是「死刑+垂直下落」，同P1阶段处理即可。这一次死刑时坦克的退避仍在CD，注意控制好仇恨（如果此时忍者有烟雾弹，影渡等技能也可使用）。</p><br>
 									<p>接着是组合技「魔力炼成x2+旋风」，除了这次是双黑球外与上一阶段处理方法相同。</p><br>
-									<p>最后是一次「垂直下落」，结束后进入循环——液体地狱→魔力炼成x2→组合技「液体地狱+火球」。一般队伍能在这一次组合技后结束战斗（2:50秒左右），随后双塔尼亚将会飞走，标志P1结束。否则3:00时双塔尼亚将会变得不可选中并读条「以太狂暴」团灭队伍。</p><br>
+									<p>最后是一次「垂直下落」，结束后进入循环——</p>
+									<p>「液体地狱（诱导）+黑球」→「液体地狱（诱导）+火球」→第四次死刑+顺劈→黑球+旋风。</p><br>
+									<p>一般队伍能在2:50秒左右结束战斗，随后双塔尼亚将会飞走，标志P1结束。否则3:00时双塔尼亚将会变得不可选中并读条「以太狂暴」团灭队伍。</p><br>
 									<hr />
 									<h3>p1完整时间轴</h3>
 									<div id="p1-timeline-area" class="timeline-area"></div>

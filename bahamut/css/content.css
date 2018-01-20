@@ -27,8 +27,8 @@
 	position: relative;
     float: left;
     overflow: hidden;
-    width: 25px;
-    height: 25px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .info-header-name{
