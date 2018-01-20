@@ -8,7 +8,7 @@ function mousePosition(ev){
         y:ev.clientY + document.body.scrollTop - document.body.clientTop   
     };   
 }  
-
+$("#image-frame").hide();
 $(".hover-frame").hide();
 
 $(".status-area").mouseenter(
