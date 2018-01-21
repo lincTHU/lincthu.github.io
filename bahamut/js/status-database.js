@@ -23,7 +23,7 @@ var statusDB = {
 		"duration": 16
 	}
 }
-lincthu.github.io/bahamut/img/hover/manaball.png
+
 var hoverDB = {
 	"map": {
 		"src": "img\\hover\\map.png"
@@ -47,3 +47,16 @@ var hoverDB = {
 		"src": "img\\hover\\firecircle.png"
 	}
 }
+
+var images = new Array();
+
+function preload() {
+	var i = 0;
+    for (var item in hoverDB) {
+        images[i] = new Image();
+        images[i].src = hoverDB[item].src;
+        i++;
+    }
+}
+
+preload();
