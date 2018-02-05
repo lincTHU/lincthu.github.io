@@ -22,23 +22,22 @@ items.add([
 ]);
 
 function updateTooltips(){
-	for (var i = items.length - 1; i >= 0; i--) {
+	for (var i in items._data) {
 		tempItem = items._data[i];
 		if (tempItem.title != undefined)
 			continue;
-		if (tempItem.group != 1)
-			continue;
 		if (tempItem.end == undefined)
-			tempItem.title = tempItem.start._i + "|" + tempItem.group +  "发动了\""  + tempItem.content + "\"<br>";
+			tempItem.title = tempItem.start._i + "|" + groups._data[tempItem.group].content +  "发动了\""  + tempItem.content + "\"<br>";
 		else{
-			tempItem.title = tempItem.start._i + "|" + tempItem.group +  "正在发动\""  + tempItem.content + "\"<br>"
-			+ tempItem.end._i + "|" + tempItem.group +  "发动了\""  + tempItem.content + "\"";
+			tempItem.title = tempItem.start._i + "|" + groups._data[tempItem.group].content +  "正在发动\""  + tempItem.content + "\"<br>"
+			+ tempItem.end._i + "|" + groups._data[tempItem.group].content +  "发动了\""  + tempItem.content + "\"";
 		}
 		tempItem.editable = false;
 	}
 }
 
-// updateTooltips();
+updateTooltips();
+
   // Configuration for the Timeline
 var options = {
 	editable: true,
@@ -67,6 +66,8 @@ var items = new vis.DataSet([
 	{id: 19, content: '魔力炼成', start: moment('01:06', 'HH:mm'), end: moment('01:09', 'HH:mm'),subgroup:3, group: 2}
 ]);
 
+updateTooltips();
+
 var container = document.getElementById('p1.2-timeline-area');
 options.min = moment('00:35', 'HH:mm');
 options.max = moment('01:20', 'HH:mm');
@@ -90,6 +91,7 @@ var items = new vis.DataSet([
 	{id: 22, content: '魔力炼成', start: moment('02:25', 'HH:mm'), end: moment('02:28', 'HH:mm'),subgroup:3, group: 2}
 ]);
 
+updateTooltips();
 
 var container = document.getElementById('p1.3-timeline-area');
 options.min =  moment('01:30', 'HH:mm');
@@ -125,6 +127,8 @@ var items = new vis.DataSet([
 	{id: 21, content: '魔力炼成', start: moment('02:06', 'HH:mm'), end: moment('02:09', 'HH:mm'),subgroup:3, group: 2},
 	{id: 22, content: '魔力炼成', start: moment('02:25', 'HH:mm'), end: moment('02:28', 'HH:mm'),subgroup:3, group: 2}
   ]);
+
+updateTooltips();
 
 var container = document.getElementById('p1-timeline-area');
 options.min =  moment('00:00', 'HH:mm');

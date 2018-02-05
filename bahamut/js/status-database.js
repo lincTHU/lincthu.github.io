@@ -21,6 +21,31 @@ var statusDB = {
 		"src": "img\\status\\ManaHypersensitivity.png", 
 		"info": "增加魔力压缩体爆炸时“魔力飞散”造成的伤害(即死)",
 		"duration": 16
+	},
+	"Firescorched": {
+		"name": "火角",   
+		"src": "img\\status\\Firescorched.png", 
+		"info": "对火角飞龙的攻击耐性降到最低"
+	},
+	"Thunderstruck": {
+		"name": "雷翼",   
+		"src": "img\\status\\Thunderstruck.png", 
+		"info": "对雷翼飞龙的攻击耐性降到最低，身上积攒了大量电气，效果结束时会对周围造成雷属性伤害"
+	},
+	"Icebitten": {
+		"name": "冰爪",   
+		"src": "img\\status\\Icebitten.png", 
+		"info": "对冰爪飞龙的攻击耐性降到最低"
+	},
+	"Doom": {
+		"name": "死亡宣告",   
+		"src": "img\\status\\Doom.png", 
+		"info": "倒计时为0时会陷入无法战斗状态"
+	},
+	"PiercingResistanceDownII": {
+		"name": "tuci 耐性大幅降低",   
+		"src": "img\\status\\PiercingResistanceDownII.png", 
+		"info": "对抗突刺属性的耐性有显著降低"
 	}
 }
 
