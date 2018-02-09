@@ -2,11 +2,15 @@
 	
 }
 
-.status-area>img{
+.status-area img{
 	width: 1.1rem;
 	position: absolute;
-	margin-left: 0.1rem;
-	margin-top: -0.2rem;
+	margin-left: 0rem;
+	margin-top: -0.05rem;
+}
+
+.status-area:hover{
+	background: rgba(170, 15, 15, 0.1)!important;
 }
 
 .ui-body-c, .ui-link:visited, .ui-link {
@@ -28,7 +32,6 @@
 	cursor: pointer;
 	text-decoration: none;
 	text-decoration: none;
-	text-shadow: 0 0px 2px #222;
-	color: #AA0F0F!important;
+	color: #BF1717!important;
 	font-weight: 500;
 }

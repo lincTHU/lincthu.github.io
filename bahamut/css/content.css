@@ -165,9 +165,6 @@
 	font-family: "方正姚体";
 }
 
-.info-section h3,h4,h5, p, li{
-    text-shadow: 0 0 0.1rem #222;
-}
 
 .info-section li{
     margin-left: .5rem;
@@ -188,9 +185,6 @@
 	font-size: 1.5em;
 }
 
-.info-section h4{
-	font-size: 1.3em;
-}
 
 /* .info-section p{
 	font-size: 100%;
@@ -223,7 +217,7 @@
 }
 
 .attention-part{
-	color: red;
+	color: #BF1717!important;
 }
 
 .remove-effect:link, .remove-effect:active, .remove-effect:hover, .remove-effect:visited{
