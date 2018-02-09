@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+	<meta charset="UTF-8">
+	<title>绝巴哈姆特歼灭战</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
+	<link rel="stylesheet" type="text/css" href="css/guide-global.css">
+	<link rel="stylesheet" type="text/css" href="css/hover-global.css">
+	<link rel="stylesheet" type="text/css" href="css/vis-global.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/status.css">
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="https://momentjs.com/downloads/moment.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+</head>
+<body>
+	<div style="display:none" id="image-frame">
+		<img class="hover-img" src="" alt="">
+	</div>
+	<div style="display:none" id="status-frame" class="hover-frame">
+		<div class="hover-block">
+			<div class="hover-header">
+				<div>
+					<div class="hover-icon">
+						<img src="img/status/Burns.png" alt="" class="icon-blur">
+						<img src="img/status/Burns.png" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="hover-header-name">火伤</div>
+					<div class="hover-categories">
+						<em class="hover-status-type">减益效果
+						</em>
+					</div>
+				</div>
+			</div>
+			<div class="hover-content-area">
+				<div class="hover-content-section">
+					<div class="hover-content-block">
+						<div class="hover-content-discription">
+							<p class="hover-content-discription-info">火属性持续伤害，体力逐渐流失(即死)</p>
+							<p class="hover-content-discription-duration"><a style="color:#0AA30E">持续时间：</a>30秒</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-wrapper">
+		<div class="site-title">
+			<div id="site-title-content">
+				<img src="img/title.png" alt="" id="site-title-img">
+			</div>
+		</div>
+		<div class="site-menu">
+			<div class="site-menu-area">
+				<div class="site-menu-item">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">双塔尼亚
+					</div>
+				</div>
+				<div class="site-menu-item">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">奈尔·神·达那</div>
+				</div>
+				<div class="site-menu-item">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">巴哈姆特之灵</div>
+				</div>
+				<div class="site-menu-item">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">万亿核爆</div>
+				</div>
+				<div class="site-menu-item">
+					<div class="site-menu-item-name">黄金巴哈姆特</div>
+				</div>
+			</div>
+		</div>
+		<div class="guide-thumbnail">
+								<img width="1920" height="1080" src="img/guide-thumbnail.jpg" class="img-thumbnail">
+							</div>
+		<div class="site-content">
+			<div class="site-container">
+				<div class="page-content">
+					<main class="guide-main">
+						<article class="article">
+							<header style= "display: none" class="guide-header">
+								<h1 class="guide-title">绝巴哈姆特歼灭战</h1>
+							</header>
+							<div class="guide-content">
+								<div  style= "display: none" class="info-section">
+									<div class="info-header">
+										<div>
+											<div class="info-icon">
+												<img src="img/Asset 1.png" alt="">
+											</div>
+										</div>
+										<div>
+											<div class="info-header-name">报酬</div>
+										</div>
+									</div>
+									<div class="info-content-area">
+										<div class="info-content-section">
+											<div class="info-content-block">
+												<div class="info-content-discription">
+													<div class="chest-area">
+														<div>
+															<img class = "chest-shade" src="img/chest-shade.png" alt="">
+															<div class="chest-icon">
+																<img src="img/totem.png" alt="">
+															</div>
+
+															<div class="chest-num">
+																<p>&nbsp;1</p>
+															</div>
+															<img class = "chest-shade" src="img/chest-shade.png" alt="">
+															<div class="chest-icon">
+																<img src="img/Tomestone.png" class="icon-blur" alt="">
+																<img src="img/Tomestone.png" alt="">
+															</div>
+															<div class="chest-num">
+																<p>30</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div style= "display: none" class="info-section">
+									<div class="info-header">
+										<div>
+											<div class="info-icon">
+												<img src="img/Asset 3.png" alt="">
+											</div>
+										</div>
+										<div>
+											<div class="info-header-name">概要</div>
+										</div>
+									</div>
+									<div class="info-content-area">
+										<div class="info-content-section">
+											<div class="info-content-block">
+												<div class="info-content-discription">
+													<li>呵，傲娇叔</li>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div style= "display: none" class="info-section">
+									<div class="info-header">
+										<div>
+											<div class="info-icon">
+												<img src="img/Asset 4.png" alt="">
+											</div>
+										</div>
+										<div>
+											<div class="info-header-name">信息</div>
+										</div>
+									</div>
+									<div class="info-content-area">
+										<div class="info-content-section">
+											<div class="info-content-block">
+												<div class="info-content-discription">
+													<li>限制时间 120分/巴哈姆特大迷宫/无法补充队员</li>
+													<li>领取报酬：1周1次/不可与其他任务同时搜索</li>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div style= "display: none" class="info-section">
+									<div class="info-header">
+										<div>
+											<div class="info-icon">
+												<img src="img/Asset 5.png" alt="">
+											</div>
+										</div>
+										<div>
+											<div class="info-header-name">参加条件</div>
+										</div>
+									</div>
+									<div class="info-content-area">
+										<div class="info-content-section">
+											<div class="info-content-block">
+												<div class="info-content-discription">
+													<li>8人用</li>
+													<li>无法解除人数限制</li>
+													<li>职业：战斗精英 魔法导师</li>
+													<li>70级</li>
+													<li>※符合规定人数时可以以任何职业构成参加，且不会受到装备品级限制。</li>
+													<br>
+													<li>完成下列任务</li>
+													<li>欧米茄零式时空狭缝 德尔塔环境4</li>
+													<br>
+													<li>从
+														<a  class="img-hover-area" name="map">
+															<img src="img/hover-sign.png" alt="">
+															&nbsp;&nbsp;&nbsp;黄金港·异国的诗人(11.5, 12.6)
+														</a>
+														处领取任务。
+													</li>	
+													<br><br><br><br>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="info-section">
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-timeline.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<br>
+									<li>陨石流*2</li>
+									<li>月华冲</li>
+									<li>巴哈姆特之爪</li>
+									<br>
+									<li>-P2·龙神的加护-</li>
+									<li>双雷+月环+火连线</li>
+									<li>奈尔台词：月环+减伤分摊/远离</li>
+									<li>死亡宣告踩圈*2</li>
+									<li>巴哈姆特之爪</li>
+									<br>
+									<li>火连线+双雷</li>
+									<br>
+									<li>奈尔台词：减伤分摊+远离/靠近</li>
+									<li>死亡宣告踩圈*3</li>
+									<li>火连线</li>
+									<li>巴哈姆特之爪</li>
+									<br>
+									<li>奈尔台词：分散+分散/靠近</li>
+									<li>双雷+火连线</li>
+									<li>死亡宣告踩圈*3</li>
+									<li>凶鸟尖喙→换T</li>
+									<br>
+									<li>-P3·俯冲阶段-</li>
+									<li>奈尔台词：(MT远离+减伤分摊)/(全员分散+远离MT)</li>
+									<br>
+									<li>俯冲结束</li>
+									<li>奈尔台词：任意</li>
+									<li>凶鸟尖喙→换T</li>
+									<li>巴哈姆特之爪</li>
+									<br>
+									<li>百万核爆（狂暴）</li>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-1.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<h4>基本技能</h4>
+									<li>天崩地裂:开场技能，场地正中央落下一把巨剑，击退所有玩家并造成基于距离衰减的伤害。巨剑落下的范围为即死区域。随后场地出现「热离子爆发」的发光区域将场地十六等分，短暂延迟后发光区域爆炸，对踩在上面的额外玩家造成即死程度的伤害并附加麻痹效果。第一次爆炸结束后，发光区域和未发光区域将会互换，然后判定第二次「热离子爆发」。
+									<li>陨石流：分散机制。BOSS首先点名四名玩家，以玩家为中心造成圆形小范围伤害（判定范围约暗影核爆大小）。随后点名另外四名玩家，造成同样的效果，如果队伍有人死亡，则一名玩家将会被点名复数次陨石流。无减伤的情况下，陨石流的伤害在3w1～3w6左右，因此玩家必须彼此分散。</li>
+									<li>月华冲：小范围的死刑技能。BOSS从主坦位置落下，以MT为中心，造成小范围的特大伤害（判定范围约暗影核爆大小）。无任何减伤的情况下，月华冲的伤害在5w左右。其余玩家需要与MT保持足够的距离，避免被秒杀。</li>
+									<li>巴哈姆特之爪：无读条的死刑。对当前MT连续进行五次攻击，每次伤害在1w左右，这个技能的持续时间约为4秒。由于普攻的攻击间隔为3秒，伤害在1w左右，而巴哈姆特之爪非咏唱技能，因此实际上这个技能可以看做巴哈姆特之爪+两次普攻，伤害会比预想的要高。
+									</li>
+									<h4>阶段详解</h4>
+									<p>开场的天崩地裂有很多站法，核心在于全员受到击退伤害后，治疗能够第一时间将全员群抬到接近满血，并且所有人能够迅速的分散。这里介绍一种站位方法：首先将全员分成三组，两个坦克1组，1H+2DPS组成2组，分别站在三个拘束装置内。根据这三个拘束装置站位，能够保证每次天崩地裂的伤害比较稳定。2名治疗做好预读，保证击退后全员血量能吃下陨石流。每组成员在击退后按既定位置大致分散引导陨石流即可。</p><br>
+									<p>如果预读失败，治疗被击退了无法奶到远处的玩家，直接就近抬血即可。由于DPS与治疗在同一组，因此不会出现加不到DPS的情况。</p><br>
+									<p>正常情况下，天崩地裂大概会造成1w～1w5左右的伤害，如果伤害过高，请调整集合点尽可能贴近场中间，或是检查全员的血量以及盾类BUFF是否足够。</p>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-2.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<p>BOSS在读条龙神的加护后，场外会召唤5只不可选中的小龙（冰火雷光暗），每条小龙会对玩家使用不同的技能。</p>
+									<h4>小龙技能</h4>
+									<li>烈火球：火龙与随机一名玩家连线，数秒后以连线玩家为中心造成圆形小范围伤害，伤害量约为9k～1w，并对范围内的所有玩家附加状态
+										<a  class="status-area" name="Firescorched">
+											<img src="img/status/Firescorched.png" alt="">
+											&nbsp;&nbsp;&nbsp;火角
+										</a>
+										。带有BUFF的玩家再次吃到火圈时将被秒杀。
+									<li>寒冰球：冰龙随机点名一名玩家，造成轻微伤害并附加效果
+										<a  class="status-area" name="Icebitten">
+											<img src="img/status/Icebitten.png" alt="">
+											&nbsp;&nbsp;&nbsp;冰爪
+										</a>
+										——带有BUFF的玩家再次吃到寒冰球时将被秒杀。
+									</li>
+									<li>雷光链：雷龙随机点名两名玩家(包括MT)，对这两名玩家造成轻等伤害，并附加
+										<a  class="status-area" name="Thunderstruck">
+											<img src="img/status/Thunderstruck.png" alt="">
+											&nbsp;&nbsp;&nbsp;雷翼
+										</a>
+										效果——效果结束时将对周围小范围玩家造成致死等级的伤害并附加麻痹效果。因此被点名的玩家需要远离人群。
+									</li>
+									<li>死亡风暴：暗龙随机点名复数名玩家，对这些玩家附加
+										<a  class="status-area" name="Doom">
+											<img src="img/status/Doom.png" alt="">
+											&nbsp;&nbsp;&nbsp;死亡宣告
+										</a>
+										状态，持续时间依次为6/10/16秒——效果结束时将对周围小范围玩家造成致死等级的伤害并附加麻痹效果。
+									</li>
+									<li>救赎之翼：光龙随机点名一名玩家脚下出现光圈，短暂延迟后光圈爆炸，秒杀踩在上面的玩家，并在原地留下一个白圈。踩在白圈上可以解除暗龙的死亡宣告效果。
+									</li>
+									<h4>BOSS新增技能</h4>
+									<li>月流电圈：跑位机制。BOSS以自身为中心使用的大范围环形AOE，需要玩家站在BOSS判定圈内或者尽可能远离BOSS。</li>
+									<li>钢铁战车：跑位机制。BOSS以自身为中心使用的中等范围圆形AOE（约野战治疗阵大小），对范围内的玩家造成大量伤害并击退到场地边缘，需要玩家在技能判定前提前远离BOSS。</li>
+									<li>热离子光束：分摊机制。BOSS随机对一名玩家使用的小范围AOE，造成大量伤害，需要由所有玩家站在一起分摊。</li>							
+									<li>凶鸟冲：分散机制。BOSS随机跳到一名玩家所在位置，造成轻微伤害并击退小范围内的其余玩家，因此所有玩家需要提前分散。</li>
+									<li>凶鸟尖喙：4秒读条的坦克死刑，换坦机制。对当前坦克造成特大「物理伤害」，并附加一层
+										<a  class="status-area" name="PiercingResistanceDownII">
+											<img src="img/status/PiercingResistanceDownII.png" alt="">
+											&nbsp;&nbsp;&nbsp;突刺耐性大幅降低
+										</a>
+										效果。</li>
+									<h3>阶段详解</h3>
+									<h4>核心机制一·冰火点名</h4>
+									<h5>机制分析</h5>
+									<p>整个P2一共有4次火连线，而每次火连线之前，都将会有4名玩家被点名冰球。玩家会被固定分成两组，按分组顺序点名冰球，也就是说，如果玩家在第一次火线被点名了冰球，除非出现减员，否则必定在第三次火线时再次被点名冰球。</p>
+									<p>另外，在第四次火线结束后，所有玩家将会再次被一轮冰球。</p>
+									<p>根据这个顺序可以知道，每个玩家至少吃两轮火球，至多吃三轮火球。</p>
+									<h5>处理方法</h5>
+									<p>理解机制后玩家可以根据队伍情况决定吃火球的顺序。</p>
+									<p>这里推荐采用：进-出-进-进的策略，也就是除了第二次火连线的人单独出去以外，其余火连线均分摊。这样即使过程中队伍出现1～2名减员，也能保证不会出现冰点名猝死的情况。第四次的分摊时为了防止前面火连线有人没分摊到的情况下补BUFF，如果前面均处理正确，第四次是否分摊不重要。这里注意，第二次火连线的玩家可以不参与后续的分摊，分摊则最多只能再分摊一次（否则就变成进-进-进-进而连续吃到两个火BUFF）。</p>
+									<p>冰与火的处理完全取决于个人，如果你理解了机制，你可以完全根据实际情况考虑如何分摊火。这里给出的策略只是作为一种参考。</p>
+									<h4>核心机制二·雷点名</h4>
+									<h5>处理方法</h5>
+									<p>基本处理思路是两个雷点名的玩家及时远离人群即可。但雷点名时可能会出现两种情况，第一种情况是BOSS同时使用了月流电圈，此时所有玩家在BOSS面前集合，而雷点名的两名玩家去左上和右上放雷，如下图所示。第二种是火连线分摊+雷点名的情况，有雷BUFF的玩家需要在分摊完火圈后第一时间远离人群，两个点名玩家事先沟通好分散位置即可。如果来不及交流，也可以直接按凶鸟冲的分配位置分散。</p>
+
+									<h4>核心机制三·光暗点名</h4>
+									<h5>机制分析</h5>
+									<p>死亡宣告一共会出现三轮，第一轮是两名玩家，后两轮是三名玩家。由于每名玩家死亡宣告的持续时间不同（6秒/10秒/16秒），白圈出现的时间也有先后顺序，因此BUFF时间短的玩家需要踩先出现的白圈。</p>
+									<h5>处理方法</h5>
+									<p>及时看清自身BUFF的持续时间踩对应的白圈。（你也可以使用ACT的触发器功能监控）</p>
+
+									<h4>核心机制四·奈尔的台词</h4>
+									<h5>机制分析</h5>
+									<p>在BOSS的新增技能中，除了凶鸟尖喙外，其余的技能都没有任何读条/范围提示，需要根据奈尔的台词来判断她接下来使用的技能组合。</p><br>
+									<p>"O red moon, scorch my enemies!" &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;月流电圈+热离子光束</p>
+									<p>"O red moon, shine the path to conquest!"&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;月流电圈+钢铁战车</p>
+									<p>"Blazing path, lead me to conquest!" &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;热离子光束+钢铁战车</p>
+									<p>"O refulgent moon, shine down your light!" &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;热离子光束+月流电圈</p>
+									<p>"From on high I descend, mine enemies to smite!" &emsp;&emsp;&emsp;——&emsp;凶鸟冲+钢铁战车</p>
+									<p>"From on high I descend, in blessed light to bask!"&emsp;&emsp;——&emsp;凶鸟冲+月流电圈</p>
+									<p>"Fleeting light, score the earth with a fiery kiss!" &emsp;——&emsp;月华冲+热离子光束</p>
+									<p>"Fleeting light, outshine the stars for the moon!" &emsp;&emsp;——&emsp;陨石流+月华冲</p>
+									<h5>处理方法</h5>
+									<p>台词将会以气泡的样式显示在BOSS头上和聊天框中，这里推荐使用ACT监控或者由一名玩家来报机制。</p><br>
+									<hr>
+									<h3>流程详解</h3>
+									<p>第一句台词为下面两种二选一：</p>
+									<p>"O red moon, scorch my enemies!" &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;月流电圈+热离子光束</p>
+									<p>"O red moon, shine the path to conquest!"&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;月流电圈+钢铁战车</p><br>
+									<p>也就是月环后接分摊或者远离。同时这个过程中会出现冰火雷光暗的点名。我们来分解一下这个部分的处理。</p>
+									<br>
+									<p>首先是双雷点名+月环。根据之前所说的，两个被雷点名的玩家站在BOSS左上方和右上方，其余人站在BOSS正面，如下图所示三角站位。</p>
+									<br>
+									<p>接着是热离子光束/钢铁战车（分摊/分散）+救赎之翼（白圈）+火线判定。根据台词，如果是分摊，所有人在BOSS正面分摊热离子光束，随后分摊位置会出现白圈。为了保证所有人躲完白圈能够分摊到火圈，这里我们统一让所有人径直移动到BOSS背后躲开白圈同时分摊火线。</p>
+									<br>
+									<p>如果是钢铁战车，那么所有人先远离BOSS躲开钢铁战车，然后在BOSS面前集合分摊火圈。这里注意，两个被雷点名的人在远离BOSS的时候，最好偏向集合的一侧远离，防止火圈来不及回到集合位置分摊。</p>
+									<br>
+									<p>第一句台词只会伴随6秒和10秒两个死亡宣告点名，并且是在冰火雷机制结束后才出现，因此比较简单，算是给玩家练习：分摊完火圈后第一个白圈爆炸，6秒死亡宣告的玩家去踩白圈消除，紧接着第二个白圈爆炸，10秒死亡宣告的玩家去踩白圈消除。被点名的玩家最后BOSS会对MT使用五连巴哈姆特之爪，标志着进入第二句台词。</p>
+									<br>
+									<hr>	
+									<br>
+									<p>BOSS在对MT使用巴哈姆特之爪的同时，会出现第二次火连线和双雷点名。根据进-出-进-进的原则，这三名玩家直接远离人群并且互相远离即可。</p>
+									<br>
+									<p>接着就是第二句台词，固定为下面两种：</p>
+									<p>"Blazing path, lead me to conquest!" &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;热离子光束+钢铁战车</p>
+									<p>"O refulgent moon, shine down your light!" &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;热离子光束+月流电圈</p>
+									<br>
+									<p>也就是分摊+远离/靠近BOSS。被点名的三名玩家在引导完火圈和雷圈之后立刻回人群分摊。接着根据台词决定是远离躲开钢铁战车或者靠近躲开月流电圈。</p>
+									<br>
+									<p>随后会出现三次救赎之翼的白圈，这一次死亡宣告的时间依次为6/10/16秒，玩家根据时间的多少依次踩白圈处理。</p>
+									<br>
+									<p>在第二个光圈爆炸的同时会出现第三次冰火雷点名，也是最难的一次，这一次光暗点名和冰火雷点名将会同时进行，因此运气不好一名玩家可能需要处理若干个机制。这里雷点名的玩家远离人群，其余玩家站在BOSS正面分摊火圈即可。由于火圈在最后一个判定的，假设死亡宣告的玩家中了雷，那么每个人的处理顺序应该是：6秒死亡宣告：踩第一个白圈→放雷→分摊火。10秒死亡宣告： 踩第二个白圈→放雷→分摊火。15秒死亡宣告：放雷→踩第三个白圈→分摊火。（优先处理死亡宣告和雷圈，即使第三次没踩到火圈，也可以在第四次进行补救）</p>
+									<br>
+									<p>火分摊后BOSS再次对MT使用巴哈姆特之爪，标志进入第三句台词。</p>
+									<br>
+									<hr>
+									<br>
+									<p>第三次台词固定为：</p>
+									<p>"From on high I descend, mine enemies to smite!" &emsp;&emsp;&emsp;——&emsp;凶鸟冲+钢铁战车</p>
+									<p>"From on high I descend, in blessed light to bask!"&emsp;&emsp;——&emsp;凶鸟冲+月流电圈</p>
+									<br>
+									<p>也就是全员分散+远离/靠近BOSS。所有人先按分好的位置分散好，防止凶鸟冲靠的太近而被击退。凶鸟冲后，所有人根据台词决定是远离BOSS躲避钢铁战车或者靠近BOSS处理月流电圈。紧接着是火连线+双雷点名。火分摊依旧是在BOSS位置分摊，这里火连线分摊是为了防止前面有人错过火圈而做的保险，如果前面该分摊的时候都分摊到了，那么这次不分摊也没有关系。而这一次双雷的判定会比火圈判定晚，因此雷点名的玩家在火圈分摊后立刻远离人群即可（如果之前都处理正确，也可以不分摊直接远离人群诱导雷圈）。</p>
+									<br>
+									<p>三次救赎之翼会在最后出现，不会与冰火雷重叠，因此比较简单，跟之前一样按持续时间不同依次解除BUFF。处理完纳尔会对MT读条“凶鸟尖喙”，ST嘲讽换坦，标志台词阶段结束正式进入小龙俯冲阶段。</p>
+									<hr>
+									<br>
+									<p>简单总结一下流程：</p><br>
+									<li>第一次冰火雷：固定两种模式</li>
+									<li>第二次冰火雷（简单无台词）：火出去+雷远离</li>
+									<li>第三次冰火雷（最难）：先处理台词→踩白圈+雷分散→火分摊</li>
+									<li>第四次冰火雷（简单）：先处理台词→火分摊→雷分散→踩白圈</li>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-3.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<h3>新增技能</h3>
+									<li>超新星：BOSS会点名玩家脚下出现黑圈，黑圈刚出现时第一段攻击只会对范围内的玩家造成轻微伤害。短暂延迟后，第二段攻击"万有引力"会将范围内的玩家拉到黑圈中新，造成伤害极高的出血效果。玩家被点名后需要及时远离黑圈范围。</li>
+									
+									<h3>阶段详解</h3>
+									<h4>核心机制·小龙俯冲</h4>
+									<h5>机制分析</h5>
+									<p>P2开场，BOSS在读条龙神的加护后，场外会出现5条小龙。在P3俯冲阶段，将会有3名玩家被点名俯冲标记。接着，这五条小龙将会按顺时针2-1-2的顺序，从12点开始依次对标记消失的位置进行俯冲。也就是说，从12点开始顺时针第一二条龙将会俯冲第一个标记消失处，第三条龙俯冲第二个标记消失处，最后两条龙俯冲第三个标记消失处。</p>
+									<h5>处理方法</h5>
+									<p>如下图所示，首先标记第一组两条小龙：根据场地标点A迅速确定12点，然后顺时针找到2条小龙。如果两只小龙距离较近，就将标记放在两只小龙的一侧，反之则将标记放在两只小龙的之间。</p>
+									<p>接着标记第二组一条小龙：找到第三只小龙，将标记放在小龙的一侧。</p>
+									<p>最后标记第三组两条小龙：找到最后两条小龙，同第一组的标记方式相同处理。</p>
+									<p>在俯冲点名消失前，BOSS会对点名的玩家使用超新星，玩家需要在标记点附近移动，躲开超新星，在俯冲标记消失后再回人群。提前回来会导致俯冲范围变大。</p>
+									<h5>俯冲阶段的台词</h5>
+									<p>在俯冲阶段开始时，纳尔同样会说出一句台词，这次固定两种模式，陨石流+月华冲或者月华冲+热离子光束。如果是前者，则在俯冲标记出现后，所有人在场中间小范围分散，处理陨石流，同时不要被俯冲到。然后保持远离MT直到月华冲结束。如果是后者，则所有人在场地正中间，MT单独远离人群引导月华冲，月华冲出现后，MT立刻回到人群一起分摊热离子光束。</p>
+									
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-4.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<p>俯冲结束后就是奈尔阶段的结尾，BOSS会使用任意一种台词，由于俯冲后不会再有冰火雷，因此处理起来很容易。台词后是凶鸟尖喙（换T）+巴哈姆特之爪。如果奈尔血量没有降至0，那么他会读条百万核爆强制灭团，否则他将飞走，标志进入P3巴哈姆特阶段。</p>
+									<br><br><br><br><br><br><br><br>
+								</div>
+							</div>
+						</article>
+					</main>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/p1-timeline.js"></script>
+	<script src="js/hover-global.js"></script>
+	<script src="js/status-database.js"></script>
+</body>
+
+</html>
