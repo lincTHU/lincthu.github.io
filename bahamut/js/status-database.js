@@ -80,6 +80,12 @@ var hoverDB = {
 	},
 	"skyfall":{
 		"src": "img\\hover\\skyfall.png"
+	},
+	"greenpoint":{
+		"src": "img\\hover\\greenpoint.png"
+	},
+	"hypernova":{
+		"src": "img\\hover\\hypernova.png"
 	}
 }
 
