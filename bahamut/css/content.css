@@ -191,17 +191,18 @@
 } */
 
 .figure{
-	width: 300px;
+	max-height: 30rem;
 }
 
 .figure img{
-	max-width: 300px;
+	max-height: 20rem;
 	box-sizing: inherit;
 	height: auto;
 	margin-bottom: 1rem;
 }
 
 .aligncenter{
+    text-align: center;
 	margin: 2rem auto;
 	clear: both;
 	display: block;
