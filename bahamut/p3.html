@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+	<meta charset="UTF-8">
+	<title>巴哈姆特绝境战</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
+	<link rel="stylesheet" type="text/css" href="css/guide-global.css">
+	<link rel="stylesheet" type="text/css" href="css/hover-global.css">
+	<link rel="stylesheet" type="text/css" href="css/vis-global.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/status.css">
+	<link rel="stylesheet" type="text/css" href="css/edit-vis.css">
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="https://momentjs.com/downloads/moment.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+</head>
+<body>
+	<div style="display:none" id="image-frame">
+		<img class="hover-img" src="" alt="">
+	</div>
+	<div style="display:none" id="status-frame" class="hover-frame">
+		<div class="hover-block">
+			<div class="hover-header">
+				<div>
+					<div class="hover-icon">
+						<img src="img/status/Burns.png" alt="" class="icon-blur">
+						<img src="img/status/Burns.png" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="hover-header-name">火伤</div>
+					<div class="hover-categories">
+						<em class="hover-status-type">减益效果
+						</em>
+					</div>
+				</div>
+			</div>
+			<div class="hover-content-area">
+				<div class="hover-content-section">
+					<div class="hover-content-block">
+						<div class="hover-content-discription">
+							<p class="hover-content-discription-info">火属性持续伤害，体力逐渐流失(即死)</p>
+							<p class="hover-content-discription-duration"><a style="color:#0AA30E">持续时间：</a>30秒</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-wrapper">
+		<div class="site-title">
+			<div id="site-title-content">
+				<img src="img/title.png" alt="" id="site-title-img">
+			</div>
+		</div>
+		<div class="site-menu">
+			<div class="site-menu-area">
+				<div class="site-menu-item">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">双塔尼亚
+					</div>
+				</div>
+				<div class="site-menu-item">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">奈尔·神·达那</div>
+				</div>
+				<div class="site-menu-item">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">巴哈姆特之灵</div>
+				</div>
+				<div class="site-menu-item">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">万亿核爆</div>
+				</div>
+				<div class="site-menu-item">
+					<div class="site-menu-item-name">黄金巴哈姆特</div>
+				</div>
+			</div>
+		</div>
+		<div class="guide-thumbnail">
+								<img width="1920" height="1080" src="img/guide-thumbnail.jpg" class="img-thumbnail">
+							</div>
+		<div class="site-content">
+			<div class="site-container">
+				<div class="page-content">
+					<main class="guide-main">
+						<article class="article">
+							<header style= "display: none" class="guide-header">
+								<h1 class="guide-title">绝巴哈姆特歼灭战</h1>
+							</header>
+							<div class="guide-content">
+								<div  style= "display: none" class="info-section">
+									<div class="info-header">
+										<div>
+											<div class="info-icon">
+												<img src="img/Asset 1.png" alt="">
+											</div>
+										</div>
+										<div>
+											<div class="info-header-name">报酬</div>
+										</div>
+									</div>
+									<div class="info-content-area">
+										<div class="info-content-section">
+											<div class="info-content-block">
+												<div class="info-content-discription">
+													<div class="chest-area">
+														<div>
+															<img class = "chest-shade" src="img/chest-shade.png" alt="">
+															<div class="chest-icon">
+																<img src="img/totem.png" alt="">
+															</div>
+
+															<div class="chest-num">
+																<p>&nbsp;1</p>
+															</div>
+															<img class = "chest-shade" src="img/chest-shade.png" alt="">
+															<div class="chest-icon">
+																<img src="img/Tomestone.png" class="icon-blur" alt="">
+																<img src="img/Tomestone.png" alt="">
+															</div>
+															<div class="chest-num">
+																<p>30</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div style= "display: none" class="info-section">
+									<div class="info-header">
+										<div>
+											<div class="info-icon">
+												<img src="img/Asset 3.png" alt="">
+											</div>
+										</div>
+										<div>
+											<div class="info-header-name">概要</div>
+										</div>
+									</div>
+									<div class="info-content-area">
+										<div class="info-content-section">
+											<div class="info-content-block">
+												<div class="info-content-discription">
+													<li>呵，傲娇叔</li>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div style= "display: none" class="info-section">
+									<div class="info-header">
+										<div>
+											<div class="info-icon">
+												<img src="img/Asset 4.png" alt="">
+											</div>
+										</div>
+										<div>
+											<div class="info-header-name">信息</div>
+										</div>
+									</div>
+									<div class="info-content-area">
+										<div class="info-content-section">
+											<div class="info-content-block">
+												<div class="info-content-discription">
+													<li>限制时间 120分/巴哈姆特大迷宫/无法补充队员</li>
+													<li>领取报酬：1周1次/不可与其他任务同时搜索</li>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div style= "display: none" class="info-section">
+									<div class="info-header">
+										<div>
+											<div class="info-icon">
+												<img src="img/Asset 5.png" alt="">
+											</div>
+										</div>
+										<div>
+											<div class="info-header-name">参加条件</div>
+										</div>
+									</div>
+									<div class="info-content-area">
+										<div class="info-content-section">
+											<div class="info-content-block">
+												<div class="info-content-discription">
+													<li>8人用</li>
+													<li>无法解除人数限制</li>
+													<li>职业：战斗精英 魔法导师</li>
+													<li>70级</li>
+													<li>※符合规定人数时可以以任何职业构成参加，且不会受到装备品级限制。</li>
+													<br>
+													<li>完成下列任务</li>
+													<li>欧米茄零式时空狭缝 德尔塔环境4</li>
+													<br>
+													<li>从
+														<a  class="img-hover-area" name="map">
+															<img src="img/hover-sign.png" alt="">
+															&nbsp;&nbsp;&nbsp;黄金港·异国的诗人(11.5, 12.6)
+														</a>
+														处领取任务。
+													</li>	
+													<br><br><br><br>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="info-section">
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-timeline.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<br>
+									<li>-开场·第七灵灾-</li>
+									<br>
+									<li>核爆吐息+平击</li>
+									<li>-进军的三重奏-</li>
+									<br>
+									<li>核爆吐息+平击</li>
+									<li>-黑炎的三重奏-</li>
+									<li>十亿核爆</li>
+									<br>
+									<li>核爆吐息x3</li>
+									<li>-灾厄的三重奏-</li>
+									<li>十亿核爆</li>
+									<br>
+									<li>核爆吐息+平击+核爆吐息</li>
+									<li>-天地的三重奏-</li>
+									<li>十亿核爆</li>
+									<br>
+									<li>核爆吐息x3</li>
+									<li>-连击的三重奏-</li>
+									<li>十亿核爆</li>
+									<br>
+									<li>平击+核爆吐息</li>
+									<li>-群龙的八重奏-</li>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p3/p3-seventh.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<p>P2奈尔飞走后，同P1转阶段一样，所有人在一个拘束装置处集合。随后从场地中央会落下一个巨大火球，击退所有人，造成一段轻等伤害。随后火球爆发，先造成三段中等伤害「灵灾之炎」，最后火球爆炸，造成超高伤害「灵灾之焰」。</p><br>
+									<div class="figure aligncenter">
+										<img src="img/p3/seventhdisaster.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※第七灵灾示意图。
+											</li>
+										</div>
+									</div>
+									<p>由于整个第七灵灾持续时间为8秒，而三段坦克LB的持续时间也为8秒，提前开启LB会导致覆盖不了最后一下大伤害灵灾之焰。因此三段LB需要在所有人被击退时开启。</p><br>
+									<p>而二段坦克LB持续时间有12秒，可以覆盖整个第七灵灾，但由于减伤幅度不够，无盾下，灵灾之炎的每段伤害在1w左右，最后的大伤害在3w5左右，因此过程中需要不断团血，确保团内成员在吃最后一下伤害时保持满状态。</p><br>
+									<p>第七灵灾结束后，巴哈姆特之灵现身，正式进入P3。</p>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p3/p3-bahamut.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<h4>基本技能</h4>
+									<li>核爆吐息：顺劈技能，魔法伤害。巴哈姆特对当前MT使用的超大范围扇形攻击，伤害很高，可以看成小死刑技能。巴哈姆特会连续使用多次核爆吐息。</li>
+									<li>平击：坦克死刑，单体物理伤害。对当前坦克造成超高伤害，必须足够的减伤覆盖。</li>
+									<p class="attention-part">※除常规减伤外，请根据伤害类型充分利用DPS的减伤技能。</p><br>
+									<hr><br>
+									<p>如下图的简略时间轴所示，P3分为若干个小部分，这里称之为「三重奏」——在每个三重奏中，巴哈姆特会与双塔尼亚，白银凶鸟一起行动，使用自身技能组成一套组合拳。</p>
+									<div id="p3.0-timeline-area" class="timeline-area"></div>
+									<div class="figure aligncenter">
+										<div>
+											<li>※P3巴哈姆特之灵简易时间轴</li>
+										</div>
+									</div>
+									<p>每个三重奏之间的间隔阶段，巴哈姆特会单独出现，仅使用上面提到的核爆吐息和平击这两个技能。而在三重奏中，巴哈姆特会使用以下技能：</p>
+									<h4>三重奏技能</h4>
+									<li>大地摇动：分散+远离机制，魔法伤害。分散——BOSS点名一名玩家头上出现标记，几秒后标记消失，BOSS朝这名玩家方向使用大范围的扇形AOE（范围大概为90°），受到伤害的玩家将会被附加” 土属性耐性大幅降低”效果，再次吃到大地摇动时将会直接死亡，因此复数名玩家被点名时需要分散，确保只吃到一次伤害。远离——吐息判定时，被点名玩家脚下会出现一个持续10秒的岩浆圈，踩在上面会受到致死级别的DOT伤害。因此被点名玩家远离BOSS放圈，防止岩浆圈妨碍到其他玩家的移动，并在大地摇动判定时及时离开岩浆圈。</li>
+									<li>风暴之翼：截线+远离机制，魔法伤害。截线——BOSS会与两名玩家连线，随后对这两名玩家使用圆形中等范围的龙卷风，造成大量伤害。连线可被其他人截断，因此必须由两名坦克开启减伤截线。远离——旋风会强行击退（秒杀）范围内除连线玩家以外的玩家。因此两个截线的坦克需要互相远离，其余玩家也需要与两名坦克保持足够的距离。
+										<p class="attention-part">※如果种族关系接不到线请跳一跳。</p>
+									</li>
+									<li>百万核爆：分散+部分集合机制，魔法伤害。分散——复数名玩家会被点名不可视范围的圆形AOE，伤害在3w左右，因此所有人需要彼此分散，这里称为「单点核爆」。另外有复数名玩家脚下会出现可视的大范围圆形AOE，所有人躲开即可。部分集合——4名玩家身上会环绕圆形核爆标记，需要站在一起分摊随后的核爆伤害，无减伤下伤害量大概在3w6~4w，这里称为「分摊核爆」。
+										<p class="attention-part">※百万核爆会出现一个玩家被复数机制点名的情况→单点核爆+分摊核爆都点同一个人→治疗需要在单点核爆后的短暂间隔（约5秒）迅速抬血，保证玩家能扛下接下来的分摊核爆。</p>
+									</li>
+									<li>百万核爆（塔型）：简称踩塔。有的三重奏中，会出现塔型的百万核爆，塔在刷新的几秒后会爆炸，爆炸时需要至少有一人站在塔里。塔爆炸时塔里的玩家会受到1w左右的伤害。如果无人踩塔或者塔内的人死亡，塔将爆炸造成团灭。</li>
+									<li>十亿核爆：部分三重奏的收尾技能，6秒咏唱，魔法伤害。对全团造成超高伤害，需要保证全员满血+足够的减伤。
+									</li>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p3/p3-1.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<p>第一次三重奏为进军的三重奏，根据下图的时间轴，我们将进军三重奏分为三个部分。第一部分为百万核爆冲+旋风，第二部分为百万核爆，第三部分为大地摇动+风暴之翼。</p>
+									<div id="p3.1-timeline-area" class="timeline-area"></div>
+									<div class="figure aligncenter">
+										<div>
+											<li>※进军的三重奏完整时间轴</li>
+										</div>
+									</div>
+									<h4>1.百万核爆冲+旋风</h4>
+									<p>BOSS在读条进军的三重奏后，会与双塔尼亚和凶鸟出现在场地的一侧，随后开始读条百万核爆冲。读条完毕后会沿场地直径进行大范围俯冲。</p><br>
+									<p>在进军三重奏读条时，玩家先在场地中心集合，巴哈姆特出现后，以巴哈姆特出现的位置为12点，左右分散站位如下图所示：</p>
+									<div class="figure aligncenter">
+										<img src="img/p3/quickmarch-1.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：进军三重奏读条时，所有人在场地正中央集合。
+											</li>
+											<li class="text-align-center">
+											※中图：BOSS重新出现在场地一侧后，迅速以BOSS所在位置为12点，按分配位置左右散开。
+											</li>
+											<li class="text-align-center">
+											※右图：BOSS的百万核爆冲读条结束后，玩家保持移动，躲开脚下的旋风。
+											</li>
+											<li class="text-align-center attention-part">
+											※由于百万核爆冲的俯冲范围很大，玩家在分散后请尽可能贴边站好。
+											</li>
+										</div>
+									</div><br>
+									<p>俯冲读条完毕后双塔尼亚刚好会使用旋风，因此玩家在观察读条完毕时就可以开始移动躲开旋风点名了。</p><br>
+									<p class="attention-part">※由于此时BOSS不可选中，百万核爆冲的读条可以由敌对列表或者焦点目标查看。</p>
+									<h4>2.百万核爆</h4>
+									<p>俯冲+旋风后BOSS会使用百万核爆：</p><br>
+									<li>4个AOE大圈将会出现在任意4名玩家脚下；</li>
+									<li>2名治疗+2名DPS将会被点名圆形小范围的单体核爆；</li>
+									<li>3名DPS将会被核爆圆圈标记，需要集合分摊。</li><br>
+									<p>处理流程：</p><br>
+									<p>AOE大圈出现后，所有人朝场中躲开大圈。同时3名DPS身上出现核爆圆圈，带圈的DPS朝6点方向（以BOSS出现的位置为12点）移动，分摊核爆，没有核爆圈的DPS则去12点方向。治疗分别站在9点和3点方向远处。2名坦克在场地中央的9点和3点方向待命。最后站位如下图所示：</p>
+									<div class="figure aligncenter">
+										<img src="img/p3/quickmarch-2.png" alt="">
+										<div>
+											<li class="text-align-center attention-part">
+											※站位均以BOSS俯冲出现的位置为12点。
+											</li>
+											<li class="text-align-center">
+											※治疗：躲开百万核爆后站在3点和9点的远程位。
+											</li>
+											<li class="text-align-center">
+											※坦克：躲开百万核爆后站在3点和9点的近战位。。
+											</li>
+											<li class="text-align-center">
+											※带有核爆圆圈的3DPS：在6点方向集合。
+											</li>
+											<li class="text-align-center">
+											※剩下1DPS：走到12点方向。
+											</li>
+										</div>
+									</div><br>
+									<p class="attention-part">※俯冲结束后，BOSS会在场中央出现，并默认朝向正6点。但这里是以俯冲出现的位置为12点，因此站位时可能发现BOSS是歪的。为了避免混乱，这里统一以俯冲位12点，不考虑BOSS的朝向。</p><br>
+									<p class="attention-part">※治疗注意，百万核爆时，1～2名DPS将会受到单体核爆+分摊核爆的两段伤害，治疗务必在间隙中奶好。否则分摊时很容易出现减员。</p>
+									<h4>3.大地摇动+风暴之翼</h4>
+									<p>在躲开百万核爆的大圈AOE时，2名治疗和没有核爆圈的DPS将会被点名大地摇动，在2中他们刚好已经站在了3,9和12点的远程位准备引导大地摇动了。随后BOSS会与两名玩家连线，由在场地中央待命的两名坦克分别截线，然后在3,9点的近战位开启减伤引导风暴之翼。最后站位处理参照下图：</p>
+									<div class="figure aligncenter">
+										<img src="img/p3/quickmarch-3.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※大地摇动对坦克的伤害不高，吃到也没关系。但要注意站位，不要被两个大地摇动覆盖了。
+											</li>
+										</div>
+									</div><br>
+									<p class="attention-part">※近战和坦克注意不要靠的太近而被龙卷风弹开。大地摇动的伤害对坦克来说不高，因此吃到也没关系。</p><br>
+									<p>风暴之翼判定后，进军三重奏就结束了。BOSS随后会使用核爆吐息，非MT玩家注意躲开BOSS前方即可。</p>
+		
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p3/p3-2.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<p>进军的三重奏结束后，BOSS会使用一次核爆吐息+平击，随后进入第二个三重奏——黑炎的三重奏，时间轴如下图所示。我们将这次三重奏分成两个部分，分别是液体地狱+俯冲+热离子光束和百万核爆+超新星。</p>
+									<div id="p3.2-timeline-area" class="timeline-area"></div>
+									<div class="figure aligncenter">
+										<div>
+											<li>※黑炎的三重奏完整时间轴</li>
+										</div>
+									</div>
+									<h4>1.液体地狱+百万核爆冲+热离子光束</h4>
+									<p>黑炎的三重奏读条结束后，一名玩家头上会出现俯冲标记，随后巴哈姆特将会朝俯冲标记出现的位置俯冲。因此这一次俯冲，需要所有人先站在场中间诱导。</p><br>
+									<p>玩家在场中集合引导的同时，迅速找到奈尔或者双塔尼亚出现的位置（队伍请统一是找奈尔还是找双塔尼亚），这里以奈尔作为例子。双塔尼亚会朝一人使用五连液体地狱，在第一个火圈出现后，所有人朝奈尔方向集中移动躲火圈。在第四次火圈出现的同时，奈尔会朝人群使用热离子光束，由于所有人是集中移动的，所以刚好能分摊到。</p><br>
+									<p class="attention-part">※除了热离子光束的高伤害，别忘了每次火圈也是有2k～3k的伤害的。</p><br>
+									<p>这里处理的关键在于每次移动要能够躲开火圈，并且不能让火圈覆盖到场地边缘。特别注意热离子光束后还有最后一次火圈，不要提前跑了，最后效果如下图所示：</p><br>
+									<div class="figure aligncenter">
+										<img src="img/p3/blackfire-1.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：所有人在场中央引导俯冲位，找到奈尔的位置，并等待第一个液体地狱。
+											</li>
+											<li class="text-align-center">
+											※右图：第一个液体地狱出现后，所有人朝奈尔移动，躲开火圈和俯冲，同时分摊热离子光束。
+											</li>
+											<li class="text-align-center attention-part">
+											※把握移动的距离，不要让火圈覆盖到场地边缘。
+											</li>
+										</div>
+									</div><br>
+									<p class="attention-part">※如果不慎火圈覆盖到了边缘，这里小队可以事先统一好：第五下火圈后所有人都朝左边跑（原因后续会说）。如下图所示：</p><br>
+									<div class="figure aligncenter">
+										<img src="img/p3/blackfire-2.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※第五下火圈后统一往左（图中逆时针）移动，保证人群在同一侧。
+											</li>
+										</div>
+									</div><br>
+									<h4>2.百万核爆+超新星</h4>
+									<p>躲完五火圈后是百万核爆，这一次只有两种百万核爆——4名玩家(1T1H2DPS)身上有环形核爆标记，需要分摊核爆，另外以巴哈姆特俯冲的位置为12点，对应的3,6,9,12点会出现4个塔型百万核爆，需要另外4个无标记玩家(1T1H2DPS)去踩塔。两队人的处理方法如下。</p>
+									<br>
+									<p class="attention-part">※塔爆炸的伤害不高，约为1w，而分摊核爆的伤害非常高，因此在热离子光束后，治疗除了常规群刷，必要时优先保证4名分摊玩家的状态。</p><br>
+									<p>两队人处理方法如下：</p><br>
+									<p>※身上有环形标记的玩家</p>
+									<br>
+									<p>躲完五连火圈后，如果场地边缘还有空隙，直接在场地边缘集合。集合时奈尔会使用4连超新星(随机朝4名玩家使用)。超新星出现在脚下后，分摊的4名玩家朝左侧（也就是沿场地逆时针）躲开超新星，同时分摊核爆。</p>
+									<br>
+									<div class="figure aligncenter">
+										<img src="img/p3/blackfire-3.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：五连火圈后玩家站位。
+											</li>
+											<li class="text-align-center">
+											※右图：4名需要分摊的玩家在边缘引导超新星出现后，往左（图中逆时针）躲避并分摊百万核爆。
+											</li>
+										</div>
+									</div>
+									<p>而如果五连火圈不幸覆盖到了边缘，按照之前统一的说法，所有人第五下火圈后统一偏左侧移动到场地边缘，保证所有人都在火圈的同一侧。然后在超新星的时候，同样沿边缘移动躲开超新星同时分摊核爆。第二下超新星出现后，核爆就判定了，4名玩家直接回场中间集合。</p>
+									<br>
+									<div class="figure aligncenter">
+										<img src="img/p3/blackfire-4.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：五连火圈如果覆盖到边缘后玩家的站位。需要确保所有玩家在同一侧。
+											</li>
+											<li class="text-align-center">
+											※右图：躲避超新星+分摊百万核爆的处理方法不变。
+											</li>
+										</div>
+									</div>
+									<p class="attention-part">※对于火圈覆盖边缘的情况，攻略中采用的处理方法是所有玩家朝一侧躲开火圈并就近分摊核爆。也有的队伍让需要分摊核爆的四名玩家走到第一个火圈前集合分摊。两种方法都可以，玩家可以根据自己喜好选择。</p><br>
+									<p>※身上无环形标记的玩家</p>
+									<br>
+									<p>按照下图所示的站位去踩塔。踩塔的玩家只需要注意一点：塔会在第三下超新星出现的同时判定爆炸。为了避免超新星覆盖了整个塔，踩塔的玩家需要先稍稍远离塔，在第一个超新星出现后再进入塔内引爆。</p>
+									<br>
+									<div class="figure aligncenter">
+										<img src="img/p3/blackfire-5.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：没有核爆标记的4名玩家移动到自己负责的塔的位置，并保持一定距离。
+											</li>
+											<li class="text-align-center">
+											※右图：(如图中召唤)在看到第一下超新星出现后，四名玩家在第三下超新星出现前进入塔内。
+											</li>
+										</div>
+									</div>
+									<p class="attention-part">※注意，如果五连火圈不幸覆盖到了边缘，有一名玩家需要绕过五连火圈去踩塔，距离非常远，一定要第一时间开启疾跑去踩塔（勉强来得及）。</p>
+									<br>
+									<p class="attention-part">※踩塔的2名DPS请沟通好自己踩哪一边的塔。</p>
+									<br>
+									<p>塔爆炸后，所有人立刻到场地中央集合抬血+做减伤，巴哈姆特会读条十亿核爆，也意味着黑炎的三重奏处理完毕。</p>
+									<br>
+
+									<p>※(不重要)在跑火圈的时候，选择奈尔或者双塔尼亚是为了确保火圈左右侧刚好各2个塔，并且有参照物移动的方向会比较一致。如果选择巴哈姆特作为参照的话，你也可以朝巴哈姆特的左上方和右上方斜45°跑火圈，效果一样。</p><br>
+									<br>
+									<p>随后巴哈姆特会使用三连核爆吐息，非MT玩家注意远离BOSS正面。</p>
+									<br>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p3/p3-3.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<p>三连核爆吐息后，战斗进入第三个三重奏——灾厄的三重奏，时间轴如下图所示。灾厄三重奏分为两个部分：奈尔台词和风暴之翼+以太失控+陨石流。</p><br>
+									<div id="p3.3-timeline-area" class="timeline-area"></div>
+									<div class="figure aligncenter">
+										<div>
+											<li>※灾厄的三重奏完整时间轴</li>
+										</div>
+									</div>
+									<h4>巴哈姆特+双塔尼亚+奈尔 站位说明</h4>
+									<p>这个阶段巴哈姆特，双塔尼亚，奈尔将会成等边三角形站在场地中央。如果玩家在P1按攻略的标点放置拘束装置，则拘束装置的所在位置刚好就是巴哈姆特三人组的位置（顺序不定）。这里我们假设它们按下图的位置出现。</p>
+									<br>
+									<div class="figure aligncenter">
+										<img src="img/p3/fellruin-1.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：没有核爆标记的4名玩家移动到自己负责的塔的位置，并保持一定距离。
+											</li>
+											<li class="text-align-center">
+											※右图：(如图中召唤)在看到第一下超新星出现后，四名玩家在第三下超新星出现前进入塔内。
+											</li>
+										</div>
+									</div>
+									<h4>1.奈尔台词</h4>
+									<p>三人重新出现后，所有人迅速找准奈尔的位置。奈尔会显示出一句台词，固定为以下两种：</p>
+									<p> “From on high I descend, a hail of stars to bring!”    —— 凶鸟冲+月流电圈</p>
+									<p> “From red moon I descend, a hail of stars to bring”    —— 月流电圈+凶鸟冲</p>
+									<br>
+									<p>凶鸟冲——玩家以奈尔位置的拘束装置为分散基准点，参考分散位如下图所示。月流电圈则直接在奈尔处集合即可。</p>
+									<div class="figure aligncenter">
+										<img src="img/p3/fellruin-2.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※白魔保持不动方便群血。
+											</li>
+											<li class="text-align-center">
+											※学者朝标记1位置分散，容易找准位置不需要调整。
+											</li>
+											<li class="text-align-center">
+											※4DPS的左右分散方向与P1，P2相同。
+											</li>
+											<li class="text-align-center">
+											※分散位置不要太远，如果月流电圈覆盖着奈尔处的拘束装置会比较不方便。
+											</li>
+										</div>
+									</div>
+									<br>
+									<h4>2.风暴之翼+以太失控+陨石流</h4>
+									<p>在奈尔说完台词，并使用第一个技能时，巴哈姆特会与随机两名玩家连绿线“风暴之翼”。两名坦克迅速扯线，并分散到另外两个拘束装置下方，其余玩家站在奈尔所在的拘束装置。所有人在拘束装置内应对双塔尼亚的“以太失控”。</p><br>
+									<div class="figure aligncenter">
+										<img src="img/p3/fellruin-3.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：处理完台词后，两名坦克截掉绿线并分散到各自的拘束装置中。
+											</li>
+											<li class="text-align-center">
+											※坦克怕误截线或者时间不够可以提前开启疾跑。
+											</li>
+											<li class="text-align-center">
+											※右图：以太失控+风暴之翼的最终站位。
+											</li>
+										</div>
+									</div>
+									<p class="attention-part">※由于巴哈姆特和双塔尼亚的左右顺序不定，因此推荐两名坦克固定去左边/右边的拘束装置，而不是根据巴哈姆特和双塔尼亚的位置移动。</p><br>
+									<p class="attention-part">※一般来说，两名坦克在处理完两次台词技能后再扯线会比较安全。但如果第一下是凶鸟冲，那么两个坦克月流电圈的时候就可以扯好线，而如果第一下是月流电圈，则去巴哈姆特下方的坦克可以直接过去，方便另一名坦克扯线。</p>
+									<br>
+									<p>以太失控判定后，非坦克玩家立刻按照之前凶鸟冲的位置（参照下图）迅速分散，应对随后而来的陨石流。</p>
+									<br>
+									<div class="figure aligncenter">
+										<img src="img/p3/fellruin-4.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※陨石流：分散和凶鸟冲相同，没有两个坦克因此分散的空间更大。
+											</li>
+										</div>
+									</div>
+									<p>凶鸟冲结束后，所有人立刻到巴哈姆特正面（也就是靠近场地中央的位置）集合减伤刷血，巴哈姆特读条使用十亿核爆，结束灾厄的三重奏。</p>
+									<br>
+									<p class="attention-part">※治疗要特别注意，陨石流过程中巴哈姆特就已经在读条十亿核爆，因此最后集合刷血的时间大概只有3～4秒——治疗需要做好预读或者使用瞬发技能，学者可以提前放好罩子。</p><br>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p3/p3-4.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p3/p3-5.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p3/p3-6.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									
+									<br><br>
+								</div>
+							</div>
+						</article>
+					</main>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/p1-timeline.js"></script>
+	<script src="js/p2-timeline.js"></script>
+	<script src="js/p3-timeline.js"></script>
+	<script src="js/hover-global.js"></script>
+	<script src="js/status-database.js"></script>
+</body>
+
+</html>

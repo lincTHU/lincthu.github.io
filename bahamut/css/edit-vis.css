@@ -6,6 +6,7 @@
 	min-width:fit-content!important;
     min-width:-webkit-fit-content;
     min-width:-moz-fit-content;
+    text-align: center;
 }
 
 .vis-timeline{
