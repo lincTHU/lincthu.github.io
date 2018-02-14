@@ -20,6 +20,11 @@ html{
     padding: 2.4rem 0 2.4rem 0;
 }
 
+
+#site-title-content:hover{
+    cursor: pointer;
+}
+
 #site-title-img{
     margin: auto;
 }
@@ -78,7 +83,7 @@ html{
 }
 
 .site-content{
-	padding: 0rem -0px 30rem -0px;
+	padding: 0rem -0px 10rem -0px;
 
 }
 
@@ -249,4 +254,9 @@ hr{
     font-size: 1.1rem;
     font-weight: 100;
     margin: 1.5rem 0;
+}
+
+.no-style-a, .no-style-a:visited, .no-style-a:link, .no-style-a:active{
+   text-decoration: none;
+   line-height: 1rem!important;
 }

@@ -35,7 +35,7 @@ var items = new vis.DataSet([
 
 
 var groups = new vis.DataSet([
-	{id: 1, content: '减伤'},
+	{id: 1, content: ' '},
 	{id: 2, content: '白银<br>凶鸟', subgroupOrder: 'subgroup', subgroupStack: {1: true, 2: true, 3:true, 4:true, 5:true, 6:true}}
 ]);
 

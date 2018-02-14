@@ -8,7 +8,7 @@ var statusDB = {
     "Neurolink": {
 		"name": "拘束",   
 		"src": "img\\status\\Neurolink.png", 
-		"info": "受到拘束，造成的伤害大幅度减少(90%)，同时大幅度减少来自特定技能的伤害"
+		"info": "受到拘束，造成的伤害会大幅降低(90%)，同时被“魔力爆散”攻击所受到的伤害会大幅降低"
 	},
     "SlashingResistanceDownII": {
 		"name": "斩击耐性大幅降低",   
@@ -17,9 +17,9 @@ var statusDB = {
 		"duration": 35
 	},
     "ManaHypersensitivity": {
-		"name": "魔力过敏症",   
+		"name": "魔力过敏",   
 		"src": "img\\status\\ManaHypersensitivity.png", 
-		"info": "增加魔力压缩体爆炸时“魔力飞散”造成的伤害(即死)",
+		"info": "变得对魔力过敏，被“魔力爆散”攻击所受到的伤害会大幅提高",
 		"duration": 16
 	},
 	"Firescorched": {
@@ -50,7 +50,16 @@ var statusDB = {
 		"name": "突刺耐性大幅降低",   
 		"src": "img\\status\\PiercingResistanceDownII.png", 
 		"info": "对抗突刺属性的耐性有显著降低"
+	},
+	"EarthResistanceDownII": {
+		"name": "土属性耐性大幅降低",   
+		"src": "img\\status\\EarthResistanceDownII.png", 
+		"info": "对抗土属性的耐性有显著降低",
+		"duration": "12"
 	}
+
+
+
 }
 
 var hoverDB = {
@@ -89,15 +98,31 @@ var hoverDB = {
 	}
 }
 
-var images = new Array();
 
-function preload() {
-	var i = 0;
-    for (var item in hoverDB) {
-        images[i] = new Image();
-        images[i].src = hoverDB[item].src;
-        i++;
-    }
+//preloader img
+function preloader() {
+	var images = new Array();
+	if (document.images) {
+		var i = 0;
+	    for (var item in hoverDB) {
+	        images[i] = new Image();
+	        images[i].src = hoverDB[item].src;
+	        i++;
+	    }
+	}
+}
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
 }
 
-preload();
+addLoadEvent(preloader);

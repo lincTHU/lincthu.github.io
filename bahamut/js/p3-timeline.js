@@ -28,7 +28,7 @@ var items = new vis.DataSet([
 
 
 var groups = new vis.DataSet([
-	{id: 1, content: '减伤'},
+	{id: 1, content: ' '},
 	{id: 2, content: '巴哈<br>姆特', subgroupOrder: 'subgroup', subgroupStack: {1: true, 2: true, 3:true, 4:true, 5:true, 6:true}}
 ]);
 
@@ -123,4 +123,76 @@ updateTooltips();
 var container = document.getElementById('p3.3-timeline-area');
 options.min = moment('08:00', 'HH:mm');
 options.max = moment('08:40', 'HH:mm');
+var timeline = new vis.Timeline(container, items, groups, options);
+
+// heavensfall
+var items = new vis.DataSet([
+    {content: '天地三重奏', start: moment('08:59', 'HH:mm'), end: moment('09:03', 'HH:mm'), subgroup:1, group: 2},
+    {content: '百万核爆冲', start: moment('09:08', 'HH:mm'), end: moment('09:12', 'HH:mm'), subgroup:2, group: 2},
+    {content: '旋风冲', start: moment('09:08', 'HH:mm'), end: moment('09:12', 'HH:mm'), subgroup:1, group: 2},
+    {content: '旋风', start: moment('09:12', 'HH:mm'), subgroup:3, group: 2},
+    {content: '天崩地裂', start: moment('09:14', 'HH:mm'), end: moment('09:17', 'HH:mm'), subgroup:1, group: 2},
+    {content: '热离子爆发', start: moment('09:24', 'HH:mm'), end: moment('09:32', 'HH:mm'), subgroup:3, group: 2},
+    {content: '百万核爆<br>（可视大圈）', start: moment('09:13', 'HH:mm'), subgroup:4, group: 2},
+    {content: '百万核爆<br>（踩塔）', start: moment('09:15', 'HH:mm'), subgroup:3, group: 2},
+    {content: '超新星', start: moment('09:26', 'HH:mm'), subgroup:1, group: 2},
+    {content: '超新星', start: moment('09:27', 'HH:mm'), subgroup:2, group: 2},
+    {content: '超新星', start: moment('09:28', 'HH:mm'), subgroup:1, group: 2},
+    {content: '十亿核爆', start: moment('09:33', 'HH:mm'), end: moment('09:39', 'HH:mm'), subgroup:1, group: 2},
+    {content: '火球', start: moment('09:29', 'HH:mm'), end: moment('09:34', 'HH:mm'), subgroup:2, group: 2}
+]);
+
+updateTooltips();
+
+var container = document.getElementById('p3.4-timeline-area');
+options.min = moment('08:55', 'HH:mm');
+options.max = moment('09:40', 'HH:mm');
+var timeline = new vis.Timeline(container, items, groups, options);
+
+// tenstrike
+var items = new vis.DataSet([
+    {content: '连击三重奏', start: moment('10:01', 'HH:mm'), end: moment('10:05', 'HH:mm'), subgroup:1, group: 2},
+    {content: '大地摇动x4', start: moment('10:26', 'HH:mm'), subgroup:1, group: 2},
+    {content: '大地摇动x4', start: moment('10:31', 'HH:mm'), subgroup:1, group: 2},
+    {content: '魔力炼成', start: moment('10:08', 'HH:mm'), end: moment('10:12', 'HH:mm'), subgroup:1, group: 2},
+    {content: '魔力炼成', start: moment('10:13', 'HH:mm'), end: moment('10:16', 'HH:mm'), subgroup:1, group: 2},
+    {content: '陨<br>石<br>流', start: moment('10:13', 'HH:mm'), subgroup:2, group: 2},
+    {content: '陨<br>石<br>流', start: moment('10:14', 'HH:mm'), subgroup:2, group: 2},
+    {content: '陨<br>石<br>流', start: moment('10:15', 'HH:mm'), subgroup:2, group: 2},
+    {content: '陨<br>石<br>流', start: moment('10:16', 'HH:mm'), subgroup:2, group: 2},
+    {content: '陨<br>石<br>流', start: moment('10:17', 'HH:mm'), subgroup:2, group: 2},
+    {content: '陨<br>石<br>流', start: moment('10:18', 'HH:mm'), subgroup:2, group: 2},
+    {content: '陨<br>石<br>流', start: moment('10:19', 'HH:mm'), subgroup:2, group: 2},
+    {content: '陨<br>石<br>流', start: moment('10:20', 'HH:mm'), subgroup:2, group: 2},
+    {content: '十亿核爆', start: moment('10:33', 'HH:mm'), end: moment('10:39', 'HH:mm'), subgroup:1, group: 2}
+]);
+
+updateTooltips();
+
+var container = document.getElementById('p3.5-timeline-area');
+options.min = moment('09:55', 'HH:mm');
+options.max = moment('10:40', 'HH:mm');
+var timeline = new vis.Timeline(container, items, groups, options);
+
+// grand octet
+var items = new vis.DataSet([
+    {content: '群龙八重奏', start: moment('10:58', 'HH:mm'), end: moment('11:02', 'HH:mm'), subgroup:1, group: 2},
+    {content: '百万核爆（分摊）', start: moment('11:40', 'HH:mm'), subgroup:1, group: 2},
+    {content: '百万核爆（踩塔）', start: moment('11:42', 'HH:mm'), subgroup:2, group: 2},
+    {content: '旋风', start: moment('11:41', 'HH:mm'), subgroup:3, group: 2},
+    {content: '奈尔俯冲', start: moment('11:11', 'HH:mm'), end: moment('11:14', 'HH:mm'), subgroup:1, group: 2},
+    {content: '巴哈俯冲', start: moment('11:28', 'HH:mm'), end: moment('11:32', 'HH:mm'), subgroup:3, group: 2},
+    {content: '小龙俯冲', start: moment('11:18', 'HH:mm'), end: moment('11:22', 'HH:mm'), subgroup:1, group: 2},
+    {content: '小龙俯冲', start: moment('11:20', 'HH:mm'), end: moment('11:24', 'HH:mm'), subgroup:2, group: 2},
+    {content: '小龙俯冲', start: moment('11:22', 'HH:mm'), end: moment('11:26', 'HH:mm'), subgroup:1, group: 2},
+    {content: '小龙俯冲', start: moment('11:24', 'HH:mm'), end: moment('11:28', 'HH:mm'), subgroup:2, group: 2},
+    {content: '小龙俯冲', start: moment('11:26', 'HH:mm'), end: moment('11:30', 'HH:mm'), subgroup:1, group: 2},
+    {content: '双塔俯冲', start: moment('11:36', 'HH:mm'), end: moment('11:40', 'HH:mm'), subgroup:3, group: 2},
+]);
+
+updateTooltips();
+
+var container = document.getElementById('p3.6-timeline-area');
+options.min = moment('10:55', 'HH:mm');
+options.max = moment('11:50', 'HH:mm');
 var timeline = new vis.Timeline(container, items, groups, options);
