@@ -52,3 +52,6 @@
         bottom: 1.16rem;
 }
 
+.vis-time-axis .vis-grid.vis-minor{
+	border: none;
+}
